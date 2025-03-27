@@ -262,3 +262,4 @@ D:\Git Projects\UDAS\obj\Debug\net9.0\refint\UDAS.dll
 D:\Git Projects\UDAS\obj\Debug\net9.0\UDAS.pdb
 D:\Git Projects\UDAS\obj\Debug\net9.0\UDAS.genruntimeconfig.cache
 D:\Git Projects\UDAS\obj\Debug\net9.0\ref\UDAS.dll
+D:\Git Projects\UDAS\obj\Debug\net9.0\compressed\o8e9fvkl9y-9rsyncvzsd.gz
