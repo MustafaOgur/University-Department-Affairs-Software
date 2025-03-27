@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4FtVF+kqNc0azNr1SMrHasZXfcIyojf8gp/HnDeseBo=",
+  "Hash": "6vV0WXb+Rr0iXdB0slwrelsfOnr9EUC3QlISid8HVPQ=",
   "Source": "UDAS",
   "BasePath": "_content/UDAS",
   "Mode": "Default",
@@ -983,6 +983,27 @@
       "OriginalItemSpec": "D:\\Git Projects\\UDAS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+      "Identity": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\o8e9fvkl9y-9rsyncvzsd.gz",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/styles#[.{fingerprint=9rsyncvzsd}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Git Projects\\UDAS\\wwwroot\\css\\styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ozfvofin6b",
+      "Integrity": "tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Git Projects\\UDAS\\wwwroot\\css\\styles.css"
+    },
+    {
       "Identity": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\or9if1go96-cosvhxvwiu.gz",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
@@ -1424,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\Git Projects\\UDAS\\wwwroot\\css\\styles.css",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git Projects\\UDAS\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9rsyncvzsd",
+      "Integrity": "FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
       "Identity": "D:\\Git Projects\\UDAS\\wwwroot\\favicon.ico",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
@@ -1443,6 +1485,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Git Projects\\UDAS\\wwwroot\\img\\background.jpg",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git Projects\\UDAS\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "img/background#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "namw8xwxtd",
+      "Integrity": "IVsjRHKtK9eU0ni8ilD8DK2dUX70fntwCFnz8HRvJKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\background.jpg"
+    },
+    {
+      "Identity": "D:\\Git Projects\\UDAS\\wwwroot\\img\\Logo.png",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git Projects\\UDAS\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "img/Logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8f1qqvi4u6",
+      "Integrity": "TCCbVcRO+Ya/fbAQ6ZppasSccI0XOE4LgAq5M/6Q/K0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo.png"
     },
     {
       "Identity": "D:\\Git Projects\\UDAS\\wwwroot\\js\\site.js",
@@ -3026,6 +3110,304 @@
       ]
     },
     {
+      "Route": "css/styles.9rsyncvzsd.css",
+      "AssetFile": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\o8e9fvkl9y-9rsyncvzsd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008474576271"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9rsyncvzsd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.9rsyncvzsd.css",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9rsyncvzsd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.9rsyncvzsd.css.gz",
+      "AssetFile": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\o8e9fvkl9y-9rsyncvzsd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9rsyncvzsd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\o8e9fvkl9y-9rsyncvzsd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008474576271"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZ3rp9SbOc9GuR62/Z4/RWDTd4VUj6dlQ8CYCqtk7Vo="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\o8e9fvkl9y-9rsyncvzsd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 18:57:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tPZFnq/x4LxPYqGSt1mt3ixIIA7zvAB2wvyyPg0/ZIk="
+        }
+      ]
+    },
+    {
       "Route": "favicon.61n19gt1b8.ico",
       "AssetFile": "D:\\Git Projects\\UDAS\\obj\\Debug\\net9.0\\compressed\\kinmaedjtc-61n19gt1b8.gz",
       "Selectors": [
@@ -3320,6 +3702,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "img/background.jpg",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\img\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IVsjRHKtK9eU0ni8ilD8DK2dUX70fntwCFnz8HRvJKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 19:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IVsjRHKtK9eU0ni8ilD8DK2dUX70fntwCFnz8HRvJKI="
+        }
+      ]
+    },
+    {
+      "Route": "img/background.namw8xwxtd.jpg",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\img\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IVsjRHKtK9eU0ni8ilD8DK2dUX70fntwCFnz8HRvJKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 19:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "namw8xwxtd"
+        },
+        {
+          "Name": "label",
+          "Value": "img/background.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IVsjRHKtK9eU0ni8ilD8DK2dUX70fntwCFnz8HRvJKI="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo.8f1qqvi4u6.png",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\img\\Logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TCCbVcRO+Ya/fbAQ6ZppasSccI0XOE4LgAq5M/6Q/K0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 15:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8f1qqvi4u6"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TCCbVcRO+Ya/fbAQ6ZppasSccI0XOE4LgAq5M/6Q/K0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo.png",
+      "AssetFile": "D:\\Git Projects\\UDAS\\wwwroot\\img\\Logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TCCbVcRO+Ya/fbAQ6ZppasSccI0XOE4LgAq5M/6Q/K0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 15:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TCCbVcRO+Ya/fbAQ6ZppasSccI0XOE4LgAq5M/6Q/K0="
         }
       ]
     },
@@ -21310,7 +21856,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21363,7 +21909,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21400,7 +21946,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21447,7 +21993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21508,7 +22054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21553,7 +22099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21608,7 +22154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21669,7 +22215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21714,7 +22260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21769,7 +22315,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21822,7 +22368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21859,7 +22405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 08:18:26 GMT"
+          "Value": "Sun, 23 Mar 2025 10:11:23 GMT"
         },
         {
           "Name": "Cache-Control",

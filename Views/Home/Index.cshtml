@@ -2,7 +2,26 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row text-center w-100">
+        <div class="col-12 mb-4">
+                <img src="img/Logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-12 mb-5">
+            <h1>Yazılım Mühendisliği</h1>
+            <h2>Bölüm İşleri Yönetim Sistemi</h2>
+        </div>
+        <!-- Akademik Giriş Butonu -->
+        <div class="col-6 mb-4">
+            <form asp-action="AcademicLogin" asp-controller="Account" method="get">
+                <button type="submit" class="btn btn-primary btn-lg w-75">Akademik Giriş</button>
+            </form>
+        </div>
+        <!-- İdari Giriş Butonu -->
+        <div class="col-6 mb-4">
+            <form asp-action="AdministrativeLogin" asp-controller="Account" method="get">
+                <button type="submit" class="btn btn-primary btn-lg w-75">İdari Giriş</button>
+            </form>
+        </div>
+    </div>
 </div>

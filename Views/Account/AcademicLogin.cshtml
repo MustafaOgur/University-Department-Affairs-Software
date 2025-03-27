@@ -1,0 +1,45 @@
+@model UDAS.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Akademik Giriş";
+}
+
+<!-- Tam Ekran Ortalamak için Flexbox Kullanımı -->
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row justify-content-center w-100">
+            <div class="col-12 mb-4 text-center">
+                <h2>Akademik Giriş</h2>
+            </div>
+            <!-- Giriş Formu -->
+            <div class="col-12 col-md-4"> <!-- Form genişliği küçültülüyor -->
+                <form asp-action="AcademicLogin" asp-controller="Account" method="post">
+                    <!-- Kullanıcı Adı -->
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="Username" name="Username" required />
+                    </div>
+                    <!-- Şifre -->
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Şifre</label>
+                        <input type="password" class="form-control" id="Password" name="Password" required />
+                    </div>
+                    
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+                    
+                    <!-- Giriş Butonu -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Giriş Yap</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
