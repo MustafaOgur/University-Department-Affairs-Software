@@ -136,7 +136,7 @@ namespace UDAS.Controllers
         [Authorize]
         [HttpGet]
         [Route("Menu")]
-        public IActionResult Menu() => View("LogOut");
+        public IActionResult Menu() => RedirectToAction("Index", "MainMenu");
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
