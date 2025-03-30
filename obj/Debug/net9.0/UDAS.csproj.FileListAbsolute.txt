@@ -528,3 +528,4 @@ C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\ref\UDAS.dll
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\23e2ev3395-rbcy1nzsoy.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\um1smutvqw-qcsevcpprb.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jck5g1v2fd-nmw23w2udg.gz

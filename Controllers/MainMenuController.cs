@@ -20,7 +20,7 @@ public class MainMenuController : Controller
         return View();
     }
 
-    public IActionResult DisplaySchedule()
+    public IActionResult DisplaySchedules()
     {
         return View();
     }

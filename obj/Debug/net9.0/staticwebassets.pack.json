@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\AddSchedule.css"
     },
     {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
+      "PackagePath": "staticwebassets\\css\\DisplaySchedules.css"
+    },
+    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
       "PackagePath": "staticwebassets\\css\\MainMenu.css"
     },
