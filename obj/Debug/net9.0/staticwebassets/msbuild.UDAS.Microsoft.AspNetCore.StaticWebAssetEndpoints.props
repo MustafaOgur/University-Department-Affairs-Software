@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/UDAS/css/MainMenu.ay9xkbnr5o.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ay9xkbnr5o"},{"Name":"integrity","Value":"sha256-ooB9EfnVdmd6ANIInxTeJL0TiM\u002B0788/Kj3OCi6vXpw="},{"Name":"label","Value":"_content/UDAS/css/MainMenu.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5609"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ooB9EfnVdmd6ANIInxTeJL0TiM\u002B0788/Kj3OCi6vXpw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 11:14:10 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/MainMenu.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ooB9EfnVdmd6ANIInxTeJL0TiM\u002B0788/Kj3OCi6vXpw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5609"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ooB9EfnVdmd6ANIInxTeJL0TiM\u002B0788/Kj3OCi6vXpw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 11:14:10 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5/90W2Q9EkA5vjw3uOjskwuI0Bvx55yPvzy5uWnrD5I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5289"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225/90W2Q9EkA5vjw3uOjskwuI0Bvx55yPvzy5uWnrD5I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 10:11:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/MainMenu.rbcy1nzsoy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rbcy1nzsoy"},{"Name":"integrity","Value":"sha256-5/90W2Q9EkA5vjw3uOjskwuI0Bvx55yPvzy5uWnrD5I="},{"Name":"label","Value":"_content/UDAS/css/MainMenu.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5289"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225/90W2Q9EkA5vjw3uOjskwuI0Bvx55yPvzy5uWnrD5I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 10:11:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

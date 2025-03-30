@@ -1,5 +1,4 @@
-
-
+/* Ortak kısım başlangıcı */
 body{
     margin: auto;
     box-sizing: border-box;
@@ -26,18 +25,72 @@ body{
     height: 65px;
 }
 
-.nav-buttons{
-    background-color: #49a1ff;
-    background: none;
-}
-
 .logout-div{
     margin-left: auto;
-    /*
-    background-color: #69b0fb;
-    background: none; */
 }
 
+.nav-buttons{
+    height: 65px; 
+    font-size: 20px;
+    font-family: 'Calibri', Times, serif;
+    background: none;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255)
+}
+
+.nav-buttons:hover{
+    background-color: #069b03;
+}
+
+.nav-buttons:active{
+    background-color: green;
+}
+
+/* Ortak kısım sonu */
+
+
+/* Kısmi ortak kısım */
+
+.container{
+    display: flex;
+    height: 100vh;
+    margin: auto;
+}
+
+.left{
+    flex: 1;
+    /* background-color: #ff4545;  */
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+}
+
+.center{
+
+    flex: 2;
+    /* background-color: #2e95bd; */
+
+
+    padding-top: 60px;
+}
+
+.right{
+    flex: 1;
+    /*background-color: #48b159; */
+
+    margin-left: 10px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+}
+
+/* Kısmi ortak kısım sonu */
+
+/* Ana içerik */
 
 button{
     height: 65px; 
@@ -51,51 +104,6 @@ button{
     /*transition: color 0.3s ease-in-out;*/
 }
 
-button:hover{
-    background-color: #069b03;
-}
-
-button:active{
-    background-color: green;
-}
-
-.container{
-    display: flex;
-    height: 100vh;
-    margin: auto;
-}
-
-.left{
-    flex: 1;
-    /* background-color: #EFEFEF; */
-
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 60px;
-}
-
-/* .left-box{
-
-    padding-top: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 3px;
-
-    border-radius: 8px;
-    
-    box-shadow: 4px 6px 10px gray;
-
-    background-color: #e7e5e5;
-} */
-
-.center{
-
-    flex: 2;
-    /* background-color: #EFEFEF; */
-
-
-    padding-top: 60px;
-}
 
 .center-box{
     display: grid;
@@ -324,17 +332,4 @@ select{
 #add-btn:active{
     background-color: #26a79d; /* Basılıyken daha koyu */
     transform: scale(0.98); /* Hafif küçülme efekti */
-}
-
-
-
-.right{
-    flex: 1;
-    /* background-color: #EFEFEF; */
-
-    margin-left: 10px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 60px;
 }

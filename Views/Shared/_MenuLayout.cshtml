@@ -10,31 +10,30 @@
 </head>
 <body>
     
+    <!-- Navbar -->
     <div class="header">
 
         <div class="logo-image">
             <img src="/img/Logo.png" alt="kou-logo" id="logo">
         </div>
-
-        <!--
         
-        -->
-        
-        <div class="nav-buttons">
-            <button id="home">Anasayfa</button>
-        <button id="schedule">Ders Programı Hazırlama</button>
-        <button id="exam">Sınav Programı Hazırlama</button>
-        <button id="sitting-plan">Oturma Düzeni Hazırlama</button>
+        <div class="nav-buttons-div">
+            <button class="nav-buttons" id="home">Anasayfa</button>
+            <button class="nav-buttons" id="schedule">Ders Programı Hazırlama</button>
+            <button class="nav-buttons" id="exam">Sınav Programı Hazırlama</button>
+            <button class="nav-buttons" id="sitting-plan">Oturma Düzeni Hazırlama</button>
         </div>
 
+        <!-- logout-div asıl proje versiyonu -->
         <div class="logout-div">
             <form asp-controller="Account" asp-action="LogOut" method="post">
-                <button id="logout" type="submit">Çıkış Yap</button>
+                <button class="nav-buttons" id="logout" type="submit">Çıkış Yap</button>
             </form>
         </div>
+        
     </div>
 
-
+    <!-- Asıl Content -->
     <div class="container">
         @RenderBody()
     </div>
