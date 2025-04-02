@@ -14,4 +14,14 @@ public class MainMenuController : Controller
     {
         return View();
     }
+
+    public IActionResult AddSchedule()
+    {
+        return View();
+    }
+
+    public IActionResult DisplaySchedules()
+    {
+        return View();
+    }
 }

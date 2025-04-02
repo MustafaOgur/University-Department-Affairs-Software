@@ -1,0 +1,91 @@
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/MainMenu.css"; 
+}
+
+
+    <div class="container"></div>
+        <div class="left">
+            
+        </div>
+
+        <div class="center">
+            <div class="center-box">
+
+                <div id="lecture-row">
+                    <p id="lecture">Ders:</p> 
+                    <select name="lectures" id="lectures">
+                        <option value="Mobile">Mobil Programlama</option>
+                        <option value="Security">Bilgi Güvenliği</option>
+                        <option value="Machine-Learning">Makine Öğrenmesi Temelleri</option>
+                    </select>
+                </div>
+                
+                <div id="time-row">
+
+                    <div id="day-div">
+                        <p id="day">Gün:</p>
+                        <select name="days" id="days">
+                            <option value="Mobile">Pazartesi</option>
+                            <option value="Security">Salı</option>
+                
+                        </select>
+                    </div>
+
+                    <div id="hour-div">
+                        <p id="clock">Saat Aralığı:</p>
+                        <select name="start-time" id="start-time">
+                            <option value="Mobile">10:00</option>
+                            <option value="Security">11:00</option>
+                            <option value="Machine-Learning">12:00</option>
+                        </select>
+                        <p id="dot">-</p>
+                        <select name="end-time" id="end-time">
+                            <option value="Mobile">11:00</option>
+                            <option value="Security">13:00</option>
+                            
+                        </select>
+                    </div>
+
+                </div>
+                    
+                    
+                <div id="lecturer-row">
+
+                    <div id="class-div">
+                        <p id="clock">Sınıf:</p>
+                        <select name="classes" id="classes">
+                            <option value="Mobile">108</option>
+                            <option value="Security">Amfi</option>
+                        </select>
+                    </div>
+
+                    <div id="lecturer-div">
+                        <p id="clock">Öğretim Görevlisi:</p>
+                        <select name="lecturers" id="lecturers">
+                            <option value="Mobile">Levent Bayındır</option>
+                            <option value="Security">Kerem Küçük</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="button-bar">
+                    <button id="abort-btn">Programı İptal Et</button>
+                    <button id="save-btn">Programı Kaydet</button>
+                    <button id="add-btn">Programa Ekle</button>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="right">
+
+        </div>
+
+    </div>
+
+

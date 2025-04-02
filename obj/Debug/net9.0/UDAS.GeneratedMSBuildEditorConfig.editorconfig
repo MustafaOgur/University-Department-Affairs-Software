@@ -44,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/AddSchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcQWRkU2NoZWR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/DisplaySchedules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcRGlzcGxheVNjaGVkdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_MenuLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_ValidationScriptsPartial.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QshYyRjHz2BaILI08I0hXYGZh4zBcYc91mIPI/DqaKs=",
+  "Hash": "sdMMby7InZhhquHm5knjlQsy2rrDbncVyQ1BGUvzZmA=",
   "Source": "UDAS",
   "BasePath": "_content/UDAS",
   "Mode": "Default",
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-ay9xkbnr5o.gz",
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-rxpxmne62e.gz",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UDAS",
-      "RelativePath": "css/MainMenu#[.{fingerprint=ay9xkbnr5o}]?.css.gz",
+      "RelativePath": "css/MainMenu#[.{fingerprint=rxpxmne62e}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "je9mbbduc2",
-      "Integrity": "5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc=",
+      "Fingerprint": "0igqisikgs",
+      "Integrity": "CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css"
@@ -815,6 +815,27 @@
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jck5g1v2fd-b937wwfcsk.gz",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/DisplaySchedules#[.{fingerprint=b937wwfcsk}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "akgdvr3n0k",
+      "Integrity": "5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css"
+    },
+    {
       "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jfaclasfer-06098lyss8.gz",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
@@ -1128,6 +1149,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\um1smutvqw-6eoxws5raa.gz",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/AddSchedule#[.{fingerprint=6eoxws5raa}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tnp8rk1gzq",
+      "Integrity": "F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css"
     },
     {
       "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\urthk1at20-d7shbmvgxk.gz",
@@ -1445,6 +1487,48 @@
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UDAS.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/AddSchedule#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6eoxws5raa",
+      "Integrity": "vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddSchedule.css"
+    },
+    {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "css/DisplaySchedules#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b937wwfcsk",
+      "Integrity": "P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DisplaySchedules.css"
+    },
+    {
       "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
@@ -1459,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ay9xkbnr5o",
-      "Integrity": "ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw=",
+      "Fingerprint": "rxpxmne62e",
+      "Integrity": "cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\MainMenu.css"
@@ -2854,13 +2938,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/MainMenu.ay9xkbnr5o.css",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-ay9xkbnr5o.gz",
+      "Route": "css/AddSchedule.6eoxws5raa.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\um1smutvqw-6eoxws5raa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000734214391"
+          "Quality": "0.001098901099"
         }
       ],
       "ResponseHeaders": [
@@ -2870,15 +2954,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1361"
+          "Value": "909"
         },
         {
           "Name": "ETag",
-          "Value": "\"5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc=\""
+          "Value": "\"F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2898,26 +2982,614 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw=\""
+          "Value": "W/\"vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ay9xkbnr5o"
+          "Value": "6eoxws5raa"
         },
         {
           "Name": "label",
-          "Value": "css/MainMenu.css"
+          "Value": "css/AddSchedule.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw="
+          "Value": "sha256-vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg="
         }
       ]
     },
     {
-      "Route": "css/MainMenu.ay9xkbnr5o.css",
+      "Route": "css/AddSchedule.6eoxws5raa.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2837"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6eoxws5raa"
+        },
+        {
+          "Name": "label",
+          "Value": "css/AddSchedule.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg="
+        }
+      ]
+    },
+    {
+      "Route": "css/AddSchedule.6eoxws5raa.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\um1smutvqw-6eoxws5raa.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6eoxws5raa"
+        },
+        {
+          "Name": "label",
+          "Value": "css/AddSchedule.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw="
+        }
+      ]
+    },
+    {
+      "Route": "css/AddSchedule.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\um1smutvqw-6eoxws5raa.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001098901099"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "909"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg="
+        }
+      ]
+    },
+    {
+      "Route": "css/AddSchedule.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2837"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vhnUTdMV5eMmVbpSfyQdjCqBXtot6PBQyFgdhmcYLHg="
+        }
+      ]
+    },
+    {
+      "Route": "css/AddSchedule.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\um1smutvqw-6eoxws5raa.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F/HyQQSPLkuTmPGsvDgSFQQdYExbICKSCDczQH9RHUw="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.b937wwfcsk.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jck5g1v2fd-b937wwfcsk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001345895020"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "742"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b937wwfcsk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/DisplaySchedules.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.b937wwfcsk.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b937wwfcsk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/DisplaySchedules.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.b937wwfcsk.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jck5g1v2fd-b937wwfcsk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b937wwfcsk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/DisplaySchedules.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jck5g1v2fd-b937wwfcsk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001345895020"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "742"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P5y28X5+4b0do+AXn2ad3fE3mm1A8DDKEXQvyyCupzs="
+        }
+      ]
+    },
+    {
+      "Route": "css/DisplaySchedules.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\jck5g1v2fd-b937wwfcsk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5q/3sCI8Emmb1Caela4pDlFQG2VtrSslZqkYVh7kE0A="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainMenu.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-rxpxmne62e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000726744186"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1375"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainMenu.css",
       "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2927,7 +3599,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5609"
+          "Value": "5423"
         },
         {
           "Name": "Content-Type",
@@ -2935,11 +3607,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw=\""
+          "Value": "\"cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainMenu.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-rxpxmne62e.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainMenu.rxpxmne62e.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-rxpxmne62e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000726744186"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1375"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxpxmne62e"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MainMenu.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainMenu.rxpxmne62e.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2949,7 +3766,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ay9xkbnr5o"
+          "Value": "rxpxmne62e"
         },
         {
           "Name": "label",
@@ -2957,13 +3774,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw="
+          "Value": "sha256-cQw9VpBMrk+xfMB0ddHtdxsYwgWxM5PdCFWtnt/o71E="
         }
       ]
     },
     {
-      "Route": "css/MainMenu.ay9xkbnr5o.css.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-ay9xkbnr5o.gz",
+      "Route": "css/MainMenu.rxpxmne62e.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-rxpxmne62e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2972,7 +3789,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1361"
+          "Value": "1375"
         },
         {
           "Name": "Content-Type",
@@ -2980,11 +3797,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc=\""
+          "Value": "\"CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
+          "Value": "Mon, 31 Mar 2025 10:19:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3002,7 +3819,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ay9xkbnr5o"
+          "Value": "rxpxmne62e"
         },
         {
           "Name": "label",
@@ -3010,144 +3827,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc="
-        }
-      ]
-    },
-    {
-      "Route": "css/MainMenu.css",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-ay9xkbnr5o.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000734214391"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1361"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw="
-        }
-      ]
-    },
-    {
-      "Route": "css/MainMenu.css",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ooB9EfnVdmd6ANIInxTeJL0TiM+0788/Kj3OCi6vXpw="
-        }
-      ]
-    },
-    {
-      "Route": "css/MainMenu.css.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\23e2ev3395-ay9xkbnr5o.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1361"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:14:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5d/NmmAw1Gmfmwnpqn0Gh7PKjqf9Ge2b0mtLZk0i6Zc="
+          "Value": "sha256-CDi2DBfBalN4HrAt1HsKvT2euUQ7LMaphOlW4H7M5nM="
         }
       ]
     },
