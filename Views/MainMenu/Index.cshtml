@@ -10,10 +10,14 @@
         <div class="center">
             <div class="selection-box">
                 <div id="row-1">
-                    <button class="selection-btn">Ders Programlarını Görüntüle</button>
+                    <form asp-controller="MainMenu" asp-action="DisplaySchedules" method="get">
+                        <button class="selection-btn">Ders Programlarını Görüntüle</button>
+                    </form>
                 </div>
                 <div id="row-2">
-                    <button class="selection-btn">Yeni Ders Programı Oluştur</button>
+                    <form asp-controller="MainMenu" asp-action="AddSchedule" method="get">
+                        <button class="selection-btn">Yeni Ders Programı Oluştur</button>
+                    </form>
                 </div>
             </div>
         </div>
