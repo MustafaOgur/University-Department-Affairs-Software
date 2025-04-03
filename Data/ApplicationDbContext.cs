@@ -15,5 +15,10 @@ namespace UDAS.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Classroom> Classrooms { get; set; }
+        public DbSet<WeekDay> WeekDays { get; set; }
+        public DbSet<CourseTime> CourseTimes { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
     }
 }

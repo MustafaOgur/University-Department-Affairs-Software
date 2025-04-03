@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using UDAS.Data;
 using UDAS.Models;
+using UDAS.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,10 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.LoginPath = "/";
     options.AccessDeniedPath = "/";
 });
+
+
+// Repository'i bağımlılık enjeksiyonu (DI) konteynerine scoped olarak kaydetme !!!!!
+builder.Services.AddScoped<CourseScheduleRepository>();
 
 
 

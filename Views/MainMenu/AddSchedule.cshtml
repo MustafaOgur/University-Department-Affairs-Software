@@ -1,3 +1,5 @@
+@model UDAS.ViewModels.CourseScheduleViewModel
+
 @{
     Layout = "_MenuLayout";
     ViewData["CSS"] = "/css/MainMenu.css"; 
@@ -15,9 +17,11 @@
                 <div id="lecture-row">
                     <p id="lecture">Ders:</p> 
                     <select name="lectures" id="lectures">
-                        <option value="Mobile">Mobil Programlama</option>
-                        <option value="Security">Bilgi Güvenliği</option>
-                        <option value="Machine-Learning">Makine Öğrenmesi Temelleri</option>
+
+                        @foreach(var course in Model.Courses){
+                            <option value="@course.Id">@course.CourseName</option>
+                        }
+
                     </select>
                 </div>
                 
@@ -26,8 +30,11 @@
                     <div id="day-div">
                         <p id="day">Gün:</p>
                         <select name="days" id="days">
-                            <option value="Mobile">Pazartesi</option>
-                            <option value="Security">Salı</option>
+
+                            @foreach(var day in Model.WeekDays){
+                            <option value="@day.Id">@day.Name</option>
+                            }
+
                 
                         </select>
                     </div>
@@ -35,14 +42,15 @@
                     <div id="hour-div">
                         <p id="clock">Saat Aralığı:</p>
                         <select name="start-time" id="start-time">
-                            <option value="Mobile">10:00</option>
-                            <option value="Security">11:00</option>
-                            <option value="Machine-Learning">12:00</option>
+                            @foreach(var time in Model.CourseTimes){
+                                <option value="@time.StartTime">@time.StartTime:00</option>
+                            }
                         </select>
                         <p id="dot">-</p>
                         <select name="end-time" id="end-time">
-                            <option value="Mobile">11:00</option>
-                            <option value="Security">13:00</option>
+                            @foreach(var time in Model.CourseTimes){
+                                <option value="@time.EndTime">@time.EndTime:00</option>
+                            }
                             
                         </select>
                     </div>
@@ -55,16 +63,18 @@
                     <div id="class-div">
                         <p id="clock">Sınıf:</p>
                         <select name="classes" id="classes">
-                            <option value="Mobile">108</option>
-                            <option value="Security">Amfi</option>
+                            @foreach(var classroom in Model.Classrooms){
+                                <option value="@classroom.Id">@classroom.RoomName</option>
+                            }
                         </select>
                     </div>
 
                     <div id="lecturer-div">
                         <p id="clock">Öğretim Görevlisi:</p>
                         <select name="lecturers" id="lecturers">
-                            <option value="Mobile">Levent Bayındır</option>
-                            <option value="Security">Kerem Küçük</option>
+                            @foreach(var lecturer in Model.Users){
+                                <option value="@lecturer.Id">@lecturer.Name @lecturer.Surname</option>
+                            }
                         </select>
                     </div>
 
