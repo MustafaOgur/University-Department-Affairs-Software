@@ -17,69 +17,69 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UDAS
 build_property.RootNamespace = UDAS
-build_property.ProjectDir = C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\
+build_property.ProjectDir = D:\Git Projects\University-Department-Affairs-Software\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software
+build_property.MSBuildProjectDirectory = D:\Git Projects\University-Department-Affairs-Software
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Account/AcademicLogin.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Account/AcademicLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2FkZW1pY0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Account/AdministrativeLogin.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Account/AdministrativeLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbmlzdHJhdGl2ZUxvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Account/LogOut.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Account/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Home/Index.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/AddSchedule.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/MainMenu/AddSchedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcQWRkU2NoZWR1bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/DisplaySchedules.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/MainMenu/DisplaySchedules.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcRGlzcGxheVNjaGVkdWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/MainMenu/Index.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/MainMenu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/Error.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_MenuLayout.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Shared/_MenuLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_navbar.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Shared/_navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/_ViewImports.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/_ViewStart.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Volkan/Desktop/Dosyalar/Visual Studio/VS Code/C\#/University-Department-Affairs-Software/Views/Shared/_Layout.cshtml]
+[D:/Git Projects/University-Department-Affairs-Software/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-16vn93x59v
