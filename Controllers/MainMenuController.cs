@@ -1,7 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SQLitePCL;
 using UDAS.Data;
+using UDAS.Entities;
 using UDAS.Models;
 using UDAS.Repositories;
 using UDAS.ViewModels;
@@ -12,10 +14,12 @@ public class MainMenuController : Controller
 {   
 
     private readonly CourseScheduleRepository _courseScheduleRepository;
+    private readonly ApplicationDbContext _context;
 
-    public MainMenuController(CourseScheduleRepository courseScheduleRepository)
+    public MainMenuController(CourseScheduleRepository courseScheduleRepository, ApplicationDbContext context)
     {
         _courseScheduleRepository = courseScheduleRepository;
+        _context = context;
     }
 
 
@@ -49,6 +53,32 @@ public class MainMenuController : Controller
         };
 
         return View(viewModel);
+    }
+
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> AddSchedule(Schedule schedule, string action)
+    {   
+        switch (action)
+        {
+            case "add":
+                if (ModelState.IsValid)
+                {
+                    _context.Add(schedule);
+                    await _context.SaveChangesAsync();
+                }
+                break;
+
+            case "save":
+
+                break;
+
+            case "abort":
+            
+                break;
+        }
+
+        return RedirectToAction("AddSchedule");
     }
 
 

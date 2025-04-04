@@ -7,7 +7,7 @@ namespace UDAS.Entities
 {
     public class Schedule
     {
-        public int Id { get; set; }
+        public int Id { get; set; } // row id
         public string? StartTime { get; set; }
         public string? EndTime { get; set; }
 
@@ -16,7 +16,7 @@ namespace UDAS.Entities
 
         public string? Lecturer { get; set; }
 
-        public int scheduleNumber { get; set; }
+        public int scheduleNumber { get; set; } // Farklı programları ayırt etmek için
 
     }
 }

@@ -14,77 +14,81 @@
         <div class="center">
             <div class="center-box">
 
-                <div id="lecture-row">
-                    <p id="lecture">Ders:</p> 
-                    <select name="lectures" id="lectures">
+                <form method="post" action="/MainMenu/AddSchedule">
 
-                        @foreach(var course in Model.Courses){
-                            <option value="@course.Id">@course.CourseName</option>
-                        }
+                    <div id="lecture-row">
+                        <p id="lecture">Ders:</p> 
+                        <select name="lectures" id="lectures">
 
-                    </select>
-                </div>
-                
-                <div id="time-row">
-
-                    <div id="day-div">
-                        <p id="day">Gün:</p>
-                        <select name="days" id="days">
-
-                            @foreach(var day in Model.WeekDays){
-                            <option value="@day.Id">@day.Name</option>
+                            @foreach(var course in Model.Courses){
+                                <option value="@course.Id">@course.CourseName</option>
                             }
 
-                
                         </select>
                     </div>
+                                    
+                    <div id="time-row">
 
-                    <div id="hour-div">
-                        <p id="clock">Saat Aralığı:</p>
-                        <select name="start-time" id="start-time">
-                            @foreach(var time in Model.CourseTimes){
-                                <option value="@time.StartTime">@time.StartTime:00</option>
-                            }
-                        </select>
-                        <p id="dot">-</p>
-                        <select name="end-time" id="end-time">
-                            @foreach(var time in Model.CourseTimes){
-                                <option value="@time.EndTime">@time.EndTime:00</option>
-                            }
-                            
-                        </select>
-                    </div>
+                        <div id="day-div">
+                            <p id="day">Gün:</p>
+                            <select name="Day" id="days">
 
-                </div>
+                                @foreach(var day in Model.WeekDays){
+                                <option value="@day.Id">@day.Name</option>
+                                }
+
                     
+                            </select>
+                        </div>
+
+                        <div id="hour-div">
+                            <p id="clock">Saat Aralığı:</p>
+                            <select name="StartTime" id="start-time">
+                                @foreach(var time in Model.CourseTimes){
+                                    <option value="@time.StartTime">@time.StartTime:00</option>
+                                }
+                            </select>
+                            <p id="dot">-</p>
+                            <select name="EndTime" id="end-time">
+                                @foreach(var time in Model.CourseTimes){
+                                    <option value="@time.EndTime">@time.EndTime:00</option>
+                                }
+                                
+                            </select>
+                        </div>
+
+                    </div>
+                                        
+                                        
+                    <div id="lecturer-row">
+
+                        <div id="class-div">
+                            <p id="clock">Sınıf:</p>
+                            <select name="Classroom" id="classes">
+                                @foreach(var classroom in Model.Classrooms){
+                                    <option value="@classroom.Id">@classroom.RoomName</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div id="lecturer-div">
+                            <p id="clock">Öğretim Görevlisi:</p>
+                            <select name="Lecturer" id="lecturers">
+                                @foreach(var lecturer in Model.Users){
+                                    <option value="@lecturer.Id">@lecturer.Name @lecturer.Surname</option>
+                                }
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="button-bar">
+                        <button type="submit" name="action" value="abort" id="abort-btn">Programı İptal Et</button>
+                        <button type="submit" name="action" value="save" id="save-btn">Programı Kaydet</button>
+                        <button type="submit" name="action" value="add" id="add-btn">Programa Ekle</button>
+                    </div>
                     
-                <div id="lecturer-row">
-
-                    <div id="class-div">
-                        <p id="clock">Sınıf:</p>
-                        <select name="classes" id="classes">
-                            @foreach(var classroom in Model.Classrooms){
-                                <option value="@classroom.Id">@classroom.RoomName</option>
-                            }
-                        </select>
-                    </div>
-
-                    <div id="lecturer-div">
-                        <p id="clock">Öğretim Görevlisi:</p>
-                        <select name="lecturers" id="lecturers">
-                            @foreach(var lecturer in Model.Users){
-                                <option value="@lecturer.Id">@lecturer.Name @lecturer.Surname</option>
-                            }
-                        </select>
-                    </div>
-
-                </div>
-
-                <div class="button-bar">
-                    <button id="abort-btn">Programı İptal Et</button>
-                    <button id="save-btn">Programı Kaydet</button>
-                    <button id="add-btn">Programa Ekle</button>
-                </div>
+                </form>
 
             </div>
 
