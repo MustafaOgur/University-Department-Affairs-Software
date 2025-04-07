@@ -84,8 +84,15 @@ public class MainMenuController : Controller
 
     [Authorize]
     [HttpGet]
-    public IActionResult DisplaySchedules()
-    {
-        return View();
+    public async Task<IActionResult> DisplaySchedules()
+    {   
+
+        var schedules = await _courseScheduleRepository.GetSchedulesAsync();
+
+        var viewModel = new ScheduleDisplayViewModel{
+            Schedules = schedules,
+        };
+
+        return View(viewModel);
     }
 }

@@ -16,9 +16,14 @@
 
                 <form method="post" action="/MainMenu/AddSchedule">
 
+                    <div class="name-bar">
+                        <p id="title">Program Adı:</p>
+                        <input type="text" id="schedule-name" name="scheduleName" value="Ders Programı - 1">
+                    </div>
+
                     <div id="lecture-row">
                         <p id="lecture">Ders:</p> 
-                        <select name="lectures" id="lectures">
+                        <select name="CourseId" id="lectures">
 
                             @foreach(var course in Model.Courses){
                                 <option value="@course.Id">@course.CourseName</option>
@@ -64,7 +69,7 @@
 
                         <div id="class-div">
                             <p id="clock">Sınıf:</p>
-                            <select name="Classroom" id="classes">
+                            <select name="ClassroomId" id="classes">
                                 @foreach(var classroom in Model.Classrooms){
                                     <option value="@classroom.Id">@classroom.RoomName</option>
                                 }
@@ -73,7 +78,7 @@
 
                         <div id="lecturer-div">
                             <p id="clock">Öğretim Görevlisi:</p>
-                            <select name="Lecturer" id="lecturers">
+                            <select name="LecturerId" id="lecturers">
                                 @foreach(var lecturer in Model.Users){
                                     <option value="@lecturer.Id">@lecturer.Name @lecturer.Surname</option>
                                 }

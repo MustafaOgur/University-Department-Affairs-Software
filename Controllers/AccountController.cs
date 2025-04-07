@@ -52,7 +52,7 @@ namespace UDAS.Controllers
 
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Name, user.Id),
+                        new Claim(ClaimTypes.Name, user.Id.ToString()),
                         new Claim(ClaimTypes.Name, user.UserName),
                         new Claim(ClaimTypes.Name, user.RoleId),
                     };
@@ -98,7 +98,7 @@ namespace UDAS.Controllers
 
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Name, user.Id),
+                        new Claim(ClaimTypes.Name, user.Id.ToString()),
                         new Claim(ClaimTypes.Name, user.UserName),
                         new Claim(ClaimTypes.Name, user.RoleId),
                     };

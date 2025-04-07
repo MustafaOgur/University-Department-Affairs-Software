@@ -132,6 +132,39 @@ button{
     /*margin-left: 80px;*/
 }
 
+.name-bar{
+    /* background-color: #007BFF; */
+    display: flex;
+
+    gap: 25px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 2px;
+}
+
+#schedule-name{
+    padding: 5px;
+    align-self: center;
+    height: 40px;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+
+#title{
+    margin-left: 36px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 p{
     background-color: beige;
     background: none;

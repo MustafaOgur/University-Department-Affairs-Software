@@ -10,5 +10,7 @@ namespace UDAS.Entities
         public int Id { get; set; }
         public string? CourseName { get; set; }
         public string? Semester { get; set; }
+
+        public ICollection<Schedule> Schedules { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace UDAS.Entities
     public class User
     {
         [Key]
-        public string? Id { get; set; }
+        public int? Id { get; set; }
         public string? Name { get; set; }
         public string? Surname { get; set; }
         public string? UserName { get; set; }
@@ -17,5 +17,7 @@ namespace UDAS.Entities
         public string? PasswordHash { get; set; }
         public string? RoleId { get; set; }
         
+
+        public ICollection<Schedule> Schedules { get; set; }
     }
 }

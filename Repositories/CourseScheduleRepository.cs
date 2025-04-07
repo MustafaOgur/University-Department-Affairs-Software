@@ -38,5 +38,13 @@ namespace UDAS.Repositories
             return await _context.CourseTimes.ToListAsync();
         }
 
+        public async Task<List<Schedule>> GetSchedulesAsync(){
+            return await _context.Schedules
+            .Include(s => s.Course)
+            .Include(s => s.Classroom)
+            .Include(s => s.Lecturer)
+            .ToListAsync();
+        }
+
     }
 }
