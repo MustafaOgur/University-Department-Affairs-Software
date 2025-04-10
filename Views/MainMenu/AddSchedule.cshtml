@@ -5,6 +5,20 @@
     ViewData["CSS"] = "/css/MainMenu.css"; 
 }
 
+@{
+    if (!ViewData.ModelState.IsValid)
+    {
+        /* <script src="/js/site.js"></script> */
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Hata',
+                text: 'Bu saatler girilen gün için dolu, lütfen farklı bir zaman aralığı seçin',
+            });
+        </script>
+    }
+}
 
     <div class="container"></div>
         <div class="left">
@@ -18,7 +32,7 @@
 
                     <div class="name-bar">
                         <p id="title">Program Adı:</p>
-                        <input type="text" id="schedule-name" name="scheduleName" value="Ders Programı - 1">
+                        <input type="text" required id="schedule-name" name="scheduleName" value="Ders Programı - 1">
                     </div>
 
                     <div id="lecture-row">
@@ -50,13 +64,13 @@
                             <p id="clock">Saat Aralığı:</p>
                             <select name="StartTime" id="start-time">
                                 @foreach(var time in Model.CourseTimes){
-                                    <option value="@time.StartTime">@time.StartTime:00</option>
+                                    <option value="@time.StartTime">@time.StartTime</option>
                                 }
                             </select>
                             <p id="dot">-</p>
                             <select name="EndTime" id="end-time">
                                 @foreach(var time in Model.CourseTimes){
-                                    <option value="@time.EndTime">@time.EndTime:00</option>
+                                    <option value="@time.EndTime">@time.EndTime</option>
                                 }
                                 
                             </select>
@@ -89,7 +103,7 @@
 
                     <div class="button-bar">
                         <button type="submit" name="action" value="abort" id="abort-btn">Programı İptal Et</button>
-                        <button type="submit" name="action" value="save" id="save-btn">Programı Kaydet</button>
+                        <!-- <button type="submit" name="action" value="save" id="save-btn">Programı Kaydet</button> -->
                         <button type="submit" name="action" value="add" id="add-btn">Programa Ekle</button>
                     </div>
                     

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using UDAS.Data;
@@ -44,6 +45,41 @@ namespace UDAS.Repositories
             .Include(s => s.Classroom)
             .Include(s => s.Lecturer)
             .ToListAsync();
+        }
+
+        public bool IsAvailable(Schedule schedule)
+        {
+            var schedules = _context.Schedules
+            .Where(s => s.StartTime == schedule.StartTime && s.Day == schedule.Day)
+            .ToList();
+
+            return !schedules.Any();
+        }
+
+        public async Task<string> AddScheduleAsync(Schedule schedule)
+        {   
+            if (IsAvailable(schedule))
+            {
+                _context.Add(schedule);
+                await _context.SaveChangesAsync();
+
+                return null;
+            }
+            else
+            {
+                return "Bu saatler girilen gün için dolu, lütfen farklı bir zaman aralığı seçin";
+            }
+        }
+
+        public async Task DeleteScheduleByName(string scheduleName)
+        {
+            var schedules = await _context.Schedules.Where(s => s.scheduleName == scheduleName).ToListAsync();
+
+            if (schedules.Any())
+            {
+                _context.Schedules.RemoveRange(schedules);
+                await _context.SaveChangesAsync();
+            }
         }
 
     }

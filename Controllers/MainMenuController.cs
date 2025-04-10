@@ -62,19 +62,41 @@ public class MainMenuController : Controller
         switch (action)
         {
             case "add":
-                if (ModelState.IsValid)
-                {
-                    _context.Add(schedule);
-                    await _context.SaveChangesAsync();
-                }
+
+                    var errorMessage = await _courseScheduleRepository.AddScheduleAsync(schedule);
+
+                    if (errorMessage != null)
+                    {
+                        ModelState.AddModelError("", errorMessage);
+
+                        var courses = await _courseScheduleRepository.GetCoursesAsync();
+                        var classrooms = await _courseScheduleRepository.GetClassroomsAsync();
+                        var weekdays = await _courseScheduleRepository.GetWeekDaysAsync();
+                        var courseTimes = await _courseScheduleRepository.GetCourseTimesAsync();
+                        var users = await _courseScheduleRepository.GetUsersAsync();
+                        
+
+                        var viewModel = new CourseScheduleViewModel{
+                            Courses = courses,
+                            Classrooms = classrooms,
+                            WeekDays = weekdays,
+                            CourseTimes = courseTimes,
+                            Users = users
+                        };
+
+                        return View(viewModel);
+                    }
+
                 break;
 
-            case "save":
+            // case "save":
 
-                break;
+            //     break;
 
             case "abort":
-            
+
+                    await _courseScheduleRepository.DeleteScheduleByName(schedule.scheduleName);
+
                 break;
         }
 

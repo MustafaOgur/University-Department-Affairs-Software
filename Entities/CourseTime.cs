@@ -8,7 +8,7 @@ namespace UDAS.Entities
     public class CourseTime
     {
         public int Id { get; set; }
-        public int StartTime { get; set; }
-        public int EndTime { get; set; }
+        public string StartTime { get; set; }
+        public string EndTime { get; set; }
     }
 }
