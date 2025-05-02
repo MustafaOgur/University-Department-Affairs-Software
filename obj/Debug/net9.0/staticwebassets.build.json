@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rhm4osj0b4gaw1j1oLbexeomSQtzSifJZZ29Xlg+FkM=",
+  "Hash": "ek21QcKWkP2cUYs+3LiRAG/ouQb5YHF6+DVRHkrPwh0=",
   "Source": "UDAS",
   "BasePath": "_content/UDAS",
   "Mode": "Default",
@@ -983,12 +983,12 @@
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-as92pm3kta.gz",
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-8x53ba2fvz.gz",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UDAS",
-      "RelativePath": "js/site#[.{fingerprint=as92pm3kta}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=8x53ba2fvz}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -997,8 +997,8 @@
       "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uozwntr1p8",
-      "Integrity": "UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM=",
+      "Fingerprint": "f7z2mledsn",
+      "Integrity": "RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js"
@@ -1669,8 +1669,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "as92pm3kta",
-      "Integrity": "9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE=",
+      "Fingerprint": "8x53ba2fvz",
+      "Integrity": "RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -4890,13 +4890,13 @@
       ]
     },
     {
-      "Route": "js/site.as92pm3kta.js",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-as92pm3kta.gz",
+      "Route": "js/site.8x53ba2fvz.js",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-8x53ba2fvz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003861003861"
+          "Quality": "0.003846153846"
         }
       ],
       "ResponseHeaders": [
@@ -4906,15 +4906,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "258"
+          "Value": "259"
         },
         {
           "Name": "ETag",
-          "Value": "\"UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM=\""
+          "Value": "\"RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4934,13 +4934,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE=\""
+          "Value": "W/\"RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "as92pm3kta"
+          "Value": "8x53ba2fvz"
         },
         {
           "Name": "label",
@@ -4948,12 +4948,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE="
+          "Value": "sha256-RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8="
         }
       ]
     },
     {
-      "Route": "js/site.as92pm3kta.js",
+      "Route": "js/site.8x53ba2fvz.js",
       "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4963,7 +4963,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "324"
+          "Value": "327"
         },
         {
           "Name": "Content-Type",
@@ -4971,11 +4971,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE=\""
+          "Value": "\"RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4985,7 +4985,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "as92pm3kta"
+          "Value": "8x53ba2fvz"
         },
         {
           "Name": "label",
@@ -4993,13 +4993,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE="
+          "Value": "sha256-RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8="
         }
       ]
     },
     {
-      "Route": "js/site.as92pm3kta.js.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-as92pm3kta.gz",
+      "Route": "js/site.8x53ba2fvz.js.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-8x53ba2fvz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5008,7 +5008,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "258"
+          "Value": "259"
         },
         {
           "Name": "Content-Type",
@@ -5016,11 +5016,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM=\""
+          "Value": "\"RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5038,7 +5038,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "as92pm3kta"
+          "Value": "8x53ba2fvz"
         },
         {
           "Name": "label",
@@ -5046,18 +5046,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM="
+          "Value": "sha256-RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4="
         }
       ]
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-as92pm3kta.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-8x53ba2fvz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003861003861"
+          "Quality": "0.003846153846"
         }
       ],
       "ResponseHeaders": [
@@ -5067,15 +5067,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "258"
+          "Value": "259"
         },
         {
           "Name": "ETag",
-          "Value": "\"UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM=\""
+          "Value": "\"RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5095,13 +5095,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE=\""
+          "Value": "W/\"RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE="
+          "Value": "sha256-RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8="
         }
       ]
     },
@@ -5116,7 +5116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "324"
+          "Value": "327"
         },
         {
           "Name": "Content-Type",
@@ -5124,11 +5124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE=\""
+          "Value": "\"RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5138,13 +5138,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9mCkzF1mn1Wf5LSCYW0bMb3QCErp3MmAVbcS6gXqKFE="
+          "Value": "sha256-RIyaWpgGh97i/0VZuib1xCwRiQRAn81xvZD01JUnnQ8="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-as92pm3kta.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\njqxarhh1x-8x53ba2fvz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5153,7 +5153,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "258"
+          "Value": "259"
         },
         {
           "Name": "Content-Type",
@@ -5161,11 +5161,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM=\""
+          "Value": "\"RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:51:45 GMT"
+          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5183,7 +5183,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UoiYe9BuM9WrniMNN78a/iTrb8LPlVxw76sdCVjOSWM="
+          "Value": "sha256-RXfWOOgR4YKCHpxrc0w8xKZwym5JOppS/qdw/Hh9Bl4="
         }
       ]
     },

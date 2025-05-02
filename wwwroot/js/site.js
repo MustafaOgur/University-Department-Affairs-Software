@@ -3,4 +3,4 @@
 
 // Write your JavaScript code.
 
-window.alert("Bu saatler girilen gün için dolu, lütfen farklı bir zaman aralığı seçin")
+// window.alert("Bu saatler girilen gün için dolu, lütfen farklı bir zaman aralığı seçin")
