@@ -599,6 +599,304 @@
       ]
     },
     {
+      "Route": "css/Classroom.bv1t5ach3f.css",
+      "AssetFile": "css/Classroom.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001024590164"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bv1t5ach3f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Classroom.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Classroom.bv1t5ach3f.css",
+      "AssetFile": "css/Classroom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3324"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bv1t5ach3f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Classroom.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Classroom.bv1t5ach3f.css.gz",
+      "AssetFile": "css/Classroom.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bv1t5ach3f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Classroom.css.gz"
+        }
+      ]
+    },
+    {
+      "Route": "css/Classroom.css",
+      "AssetFile": "css/Classroom.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001024590164"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Classroom.css",
+      "AssetFile": "css/Classroom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3324"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Classroom.css.gz",
+      "AssetFile": "css/Classroom.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:37:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iVGXPsH8tbEMMkzMY6CSWqoOPTDxmB5eaq/mb6QM0Vk="
+        }
+      ]
+    },
+    {
       "Route": "css/DisplaySchedules.css",
       "AssetFile": "css/DisplaySchedules.css.gz",
       "Selectors": [
@@ -937,7 +1235,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -978,7 +1276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1019,7 +1317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -1074,7 +1372,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -1123,7 +1421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1172,7 +1470,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 12:51:11 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -2253,6 +2551,88 @@
       ]
     },
     {
+      "Route": "img/derslik.4qxyjpeprp.png",
+      "AssetFile": "img/derslik.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "697352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAkgo3/CWz6DGWGCeHN6SCbx0xODa5tlQwlC+0zkxJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 08:20:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4qxyjpeprp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAkgo3/CWz6DGWGCeHN6SCbx0xODa5tlQwlC+0zkxJk="
+        },
+        {
+          "Name": "label",
+          "Value": "img/derslik.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/derslik.png",
+      "AssetFile": "img/derslik.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "697352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xAkgo3/CWz6DGWGCeHN6SCbx0xODa5tlQwlC+0zkxJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 08:20:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xAkgo3/CWz6DGWGCeHN6SCbx0xODa5tlQwlC+0zkxJk="
+        }
+      ]
+    },
+    {
       "Route": "js/site.8x53ba2fvz.js",
       "AssetFile": "js/site.js.gz",
       "Selectors": [
@@ -2293,7 +2673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -2342,7 +2722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2391,7 +2771,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -2454,7 +2834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
@@ -2495,7 +2875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2536,7 +2916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 05:44:21 GMT"
+          "Value": "Fri, 02 May 2025 07:56:13 GMT"
         },
         {
           "Name": "Vary",
