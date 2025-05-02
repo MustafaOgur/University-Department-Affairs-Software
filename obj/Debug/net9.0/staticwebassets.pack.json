@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Classroom.css"
     },
     {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\ClassroomSelection.css",
+      "PackagePath": "staticwebassets\\css\\ClassroomSelection.css"
+    },
+    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",
       "PackagePath": "staticwebassets\\css\\DisplaySchedules.css"
     },

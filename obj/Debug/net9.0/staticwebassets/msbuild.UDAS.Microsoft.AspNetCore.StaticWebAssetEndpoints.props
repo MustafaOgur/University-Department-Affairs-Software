@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3324"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:37:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/ClassroomSelection.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ClassroomSelection.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-m8ivOHAc2mR8e3KZRkanfRmfjFpyUTdJtvV0zBMKnWk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3198"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022m8ivOHAc2mR8e3KZRkanfRmfjFpyUTdJtvV0zBMKnWk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 17:13:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/ClassroomSelection.ja6zyb54uy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ClassroomSelection.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ja6zyb54uy"},{"Name":"integrity","Value":"sha256-m8ivOHAc2mR8e3KZRkanfRmfjFpyUTdJtvV0zBMKnWk="},{"Name":"label","Value":"_content/UDAS/css/ClassroomSelection.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3198"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022m8ivOHAc2mR8e3KZRkanfRmfjFpyUTdJtvV0zBMKnWk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 17:13:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySchedules.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySchedules.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

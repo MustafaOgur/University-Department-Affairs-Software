@@ -14,6 +14,13 @@ public class ClassroomController : Controller
 {   
     [Authorize]
     [HttpGet]
+    public IActionResult ClassroomSelection()
+    {
+        return View();
+    }
+
+    [Authorize]
+    [HttpGet]
     public IActionResult Classroom()
     {
         return View();

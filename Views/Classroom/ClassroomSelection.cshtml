@@ -1,0 +1,29 @@
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/ClassroomSelection.css";
+}
+
+    <div class="left"></div>
+
+    <div class="center">
+    <div class="center-box">
+        
+        <div class="selection-box">
+        <p>Hangi dersliği görüntülemek istersiniz?</p>
+        <select name="classrooms" id="classrooms">
+            <option value="Lab">1044 Lab</option>
+            <option value="108">108</option>
+            <option value="Amfi">Amfi</option>
+        </select>
+        </div>
+
+        <div class="button-bar">
+        <form asp-controller="Classroom" asp-action="Classroom" method="get">
+            <button id="display-btn">Görüntüle</button>
+        </form>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="right"></div>
