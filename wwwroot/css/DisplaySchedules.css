@@ -99,14 +99,16 @@ body{
 /* Kısmi ortak kısım sonu */
 
 .table-div{
+    /* Eski kısım */
     display: grid;
 
     grid-template-columns: repeat(1, 1fr); /* 1 eşit sütun */
-    gap: 10px; /* Elemanlar arasında 20px boşluk */
-    padding: 20px;
-    background-color: #EFEFEF;
+    gap: 10px; 
+    padding: 20px; 
 
-    font-size: 130%;
+    /* background-color: #EFEFEF; orijinal */
+    background-color: #f79f9f;
+    
 
     height: auto;
     width: auto;
@@ -118,9 +120,37 @@ body{
     box-shadow: 8px 3px 5px rgb(132, 136, 138);
 }
 
+.schedule-with-year{
+    background-color: #f26868;
+    padding: 15px;
+
+    display: flex;
+}
+
+.year-col{
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 3px;
+
+    font-size: 130%;
+
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: #007BFF;
+
+    display: flex;
+    justify-items: center;
+}
+
+p{
+    background-color: #05ad03;
+    align-self: center;
+}
+
 table{
     background-color: black;
     border-width: 15px;
+    width: 100%;
 }
 
 th{

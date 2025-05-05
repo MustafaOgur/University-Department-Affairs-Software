@@ -1,4 +1,4 @@
-/* Ortak kısım başlangıcı */
+/* Ortak kısım */
 body{
     margin: auto;
     box-sizing: border-box;
@@ -98,279 +98,66 @@ body{
 
 /* Kısmi ortak kısım sonu */
 
-/* Ana içerik */
-
-button{
-    height: 65px; 
-    font-size: 20px;
-    font-family: 'Calibri', Times, serif;
-    background: none;
-    padding: 10px 40px;
-    border: none;
-    cursor: pointer;
-    color: rgb(255, 255, 255)
-    /*transition: color 0.3s ease-in-out;*/
-}
-
-
-.center-box{
+.selection-box{
     display: grid;
 
     grid-template-columns: repeat(1, 1fr); /* 1 eşit sütun */
-    gap: 20px; /* Elemanlar arasında 20px boşluk */
-    padding: 0px;
+    gap: 10px; /* Elemanlar arasında 20px boşluk */
+    padding: 20px;
     background-color: #EFEFEF;
 
     font-size: 130%;
+
+    height: 180px;
+    width: auto;
 
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
 
     box-shadow: 8px 3px 5px rgb(132, 136, 138);
-
-    /*margin-left: 80px;*/
 }
 
-.name-bar{
+#row-1{
+    display: flex;
     /* background-color: #007BFF; */
-    display: flex;
-
-    gap: 25px;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    border-radius: 5px;
-    border-style: solid;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-bottom-width: 2px;
-}
-
-#schedule-name{
-    padding: 5px;
     align-self: center;
-    height: 40px;
-    font-size: 25px;
-    /* font-weight: bold; */
+    padding: 10px;
 }
 
-#title{
-    margin-left: 36px;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-p{
-    background-color: beige;
-    background: none;
-    width: auto;
-    text-align: center;
+#row-2{
+    display: flex;
+    /* background-color: #ff4545; */
     align-self: center;
+    padding: 10px;
 }
 
-#lecture-row{
-    display: flex;
-    justify-content: left;
-
-    padding-left: 50px;
-
-    background-color: #5F99AE;
-    background: none;
-}
-
-#lectures{
-    font-size: 85%;
-}
-
-#time-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    background-color: #5d7680;
-    background: none;
-}
-
-#day-div{
-
-    display: flex;
-    justify-content: left;
-
-    padding-left: 50px;
-
-    background-color: #007BFF;
-    background: none;
-}
-
-#hour-div{
-
-    display: flex;
-    justify-content: left;
-
-    padding-left: 30px;
-
-    background-color: #2fbdff;
-    background: none;
-}
-
-#lecturer-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    background-color: #414649;
-    background: none;
-}
-
-#class-div{
-    display: flex;
-    justify-content: left;
-
-    padding-left: 50px;
-
-    background-color: #00ff59;
-    background: none; 
-}
-
-#lecturer-div{
-    display: flex;
-    justify-content: left;
-
-    padding-left: 30px;
-
-    background-color: #bf55f4;
-    background: none;
-}
-
-select{
-    height: 35px;
-    margin-left: 25px;
-    margin-top: 14px;
-
-
-    border-radius: 8px;
-    border: 2px solid #2984e7; 
-    background: #f8f9fa; /* Arka plan rengi */
-    cursor: pointer;
-}
-
-#days{
-    width: 200px;
-    font-size: 85%;
-    margin-top: 22px;
-}
-
-#start-time{
-    height: 30px;
-    width: auto;
-    margin-left: 78px;
-    margin-right: 5px;
-
-    margin-top: 24px;
-
-    font-size: 75%;
-}
-
-#end-time{
-    height: 30px;
-    width: auto;
-    margin-left: 5px;
-    margin-right: 0px;
-
-    margin-top: 24px;
-
-    font-size: 75%;
-}
-
-#classes{
-    width: 135px;
-    font-size: 85%;
-}
-
-#lecturers{
-    width: 140px;
-    font-size: 70%;
-}
-
-#dot{
-    margin-top: 25px;
-    /*
+.selection-btn{
     margin-left: auto;
     margin-right: auto;
-    */
-    font-size: 120%;
-}
 
+    height: 65px;
+    width: 575px;
 
-.button-bar{
-    /* background-color: #5d7680; */
+    font-size: 110%;
+    color: #EFEFEF;
+    font-family: 'Calibri', Times, serif;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 1 eşit sütun */
-    
-    gap: 25px;
+    background: none;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
 
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    border-radius: 5px;
-    border-style: solid;
-    border-top-width: 2px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-bottom-width: 0px;
-}
-
-#abort-btn{
-    background-color: #e63200;
+    background-color: #08b0f3; /* eski #578FCA */
     border-radius: 10px;
 }
 
-#abort-btn:hover{
-    background-color: #c52f05;
+.selection-btn:hover{
+    background-color: rgb(5, 154, 184);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
 }
 
-#abort-btn:active{
-    background-color: #ad2905; /* Basılıyken daha koyu */
-    transform: scale(0.98); /* Hafif küçülme efekti */
-}
-
-
-
-#save-btn{
-    background-color: #0ce133;
-    border-radius: 10px;
-}
-
-#save-btn:hover{
-    background-color: #1bcf3c;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
-}
-
-#save-btn:active{
-    background-color: rgb(24, 181, 53); /* Basılıyken daha koyu */
-    transform: scale(0.98); /* Hafif küçülme efekti */
-}
-
-
-
-#add-btn{
-    background-color: #2ce2d3;
-    border-radius: 10px;
-}
-
-#add-btn:hover{
-    background-color: #29d0c2;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
-}
-
-#add-btn:active{
-    background-color: #26a79d; /* Basılıyken daha koyu */
+.selection-btn:active{
+    background-color: rgb(6, 131, 156); /* Basılıyken daha koyu */
     transform: scale(0.98); /* Hafif küçülme efekti */
 }

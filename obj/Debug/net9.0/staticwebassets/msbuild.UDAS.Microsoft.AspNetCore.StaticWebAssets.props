@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ibufdo7379</Fingerprint>
-      <Integrity>PgR3tYJN0zsVao9MRlPebbQkNKj/48DadTgfBLflfvs=</Integrity>
+      <Fingerprint>nmhc2ml3ra</Fingerprint>
+      <Integrity>P07QWdDRse1ZCrNIxJU+vnVPMJ90ZzFnr+22ff0WIeM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddSchedule.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jrdvx9u0iz</Fingerprint>
-      <Integrity>kUPK/3nxuneVJFa/h6DmwVZBJQqVt9MmlAsybvtMrNU=</Integrity>
+      <Fingerprint>ftbawf8a06</Fingerprint>
+      <Integrity>relV/DjrV47BAzuFHTs6/X5OATGIi2zrQKO9D9E4tas=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySchedules.css'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gu7tq619fd</Fingerprint>
-      <Integrity>+E7RlbZr5zkDc9cCX8iilzKdHR/AmOLBlLiqQT143gs=</Integrity>
+      <Fingerprint>ibufdo7379</Fingerprint>
+      <Integrity>PgR3tYJN0zsVao9MRlPebbQkNKj/48DadTgfBLflfvs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</OriginalItemSpec>
