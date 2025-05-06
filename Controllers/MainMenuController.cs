@@ -111,8 +111,17 @@ public class MainMenuController : Controller
 
         var schedules = await _courseScheduleRepository.GetSchedulesAsync();
 
+        var groupped = schedules
+        .Where(s => s.Course != null)
+        .GroupBy(s => s.Course!.Year)
+        .Select(g => new YearlyScheduleGroup{
+            Year = g.Key,
+            Schedules = g.ToList()
+        })
+        .ToList();
+
         var viewModel = new ScheduleDisplayViewModel{
-            Schedules = schedules,
+            Groups = groupped,
         };
 
         return View(viewModel);

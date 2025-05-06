@@ -104,10 +104,13 @@ body{
 
     grid-template-columns: repeat(1, 1fr); /* 1 eşit sütun */
     gap: 10px; 
-    padding: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
 
-    /* background-color: #EFEFEF; orijinal */
-    background-color: #f79f9f;
+    background-color: #EFEFEF;
+    /* background-color: #f79f9f; */
     
 
     height: auto;
@@ -121,8 +124,8 @@ body{
 }
 
 .schedule-with-year{
-    background-color: #f26868;
-    padding: 15px;
+    /* background-color: #f26868; */
+    padding: 5px;
 
     display: flex;
 }
@@ -136,21 +139,23 @@ body{
 
     padding-right: 7px;
     padding-left: 7px;
-    background-color: #007BFF;
+    background-color: gainsboro;
 
     display: flex;
     justify-items: center;
 }
 
 p{
-    background-color: #05ad03;
+    /* background-color: #05ad03; */
     align-self: center;
+    font-weight: bold;
 }
 
 table{
     background-color: black;
     border-width: 15px;
     width: 100%;
+    font-size: 110%;
 }
 
 th{
@@ -159,6 +164,14 @@ th{
 
 td{
     text-align: center;
+    background-color: gainsboro;
+    padding: 2px;
+    
+}
+
+.times{
+    background-color: rgba(220, 220, 220, 0.814);
+    font-weight: bold;
 }
 
 .days{
@@ -166,5 +179,5 @@ td{
 }
 
 tr{
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
 }

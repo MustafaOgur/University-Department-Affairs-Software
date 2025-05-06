@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ftbawf8a06</Fingerprint>
-      <Integrity>relV/DjrV47BAzuFHTs6/X5OATGIi2zrQKO9D9E4tas=</Integrity>
+      <Fingerprint>d44jwm9jlq</Fingerprint>
+      <Integrity>nSMPmpN5uIor4pkISg1etx9w8UNX3CH+P/zvwgnvDZc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySchedules.css'))</OriginalItemSpec>

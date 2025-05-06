@@ -48,12 +48,15 @@ namespace UDAS.Repositories
         }
 
         public bool IsAvailable(Schedule schedule)
-        {
-            var schedules = _context.Schedules
-            .Where(s => s.StartTime == schedule.StartTime && s.Day == schedule.Day)
-            .ToList();
+        {   
+            bool conflictExists = _context.Schedules
+            .Include(s => s.Course)
+            .Where(s => s.LecturerId == schedule.LecturerId &&
+                        s.Day == schedule.Day &&
+                        s.StartTime == schedule.StartTime)
+            .Any();
 
-            return !schedules.Any();
+            return !conflictExists;
         }
 
         public async Task<string> AddScheduleAsync(Schedule schedule)

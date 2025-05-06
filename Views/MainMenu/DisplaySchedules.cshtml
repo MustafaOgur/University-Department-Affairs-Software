@@ -11,121 +11,88 @@
         <div class="center">
             <div class="table-div">
 
-                <div class="schedule-with-year">
-                <div class="year-col">
-                    <p>3.Sınıf</p>
-                </div>
+                @foreach(var group in Model.Groups){
+                    <div class="schedule-with-year">
+                        <div class="year-col">
+                            <p>@group.Year .Sınıf</p>
+                        </div>
 
-                <table class="schedule">
+                        <table class="schedule">
 
-                    <thead>
-                        <tr class="days">
-                            <th></th>
-                            <th>Pazartesi</th>
-                            <th>Salı</th>
-                            <th>Çarşamba</th>
-                            <th>Perşembe</th>
-                            <th>Cuma</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        @foreach (var timeSlot in Model.Schedules.GroupBy(s => new {s.StartTime, s.EndTime})){
-                            <tr class="cells">
-                                <td>@timeSlot.Key.StartTime - @timeSlot.Key.EndTime</td>
+                            <thead>
+                                <tr class="days">
+                                    <th></th>
+                                    <th>Pazartesi</th>
+                                    <th>Salı</th>
+                                    <th>Çarşamba</th>
+                                    <th>Perşembe</th>
+                                    <th>Cuma</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                @foreach (var timeSlot in group.Schedules.GroupBy(s => new {s.StartTime, s.EndTime})){
+                                    <tr class="cells">
+                                        <td class="times">@timeSlot.Key.StartTime - @timeSlot.Key.EndTime</td>
 
-                                <td>
-                                    @{
-                                        var monday = timeSlot.FirstOrDefault(s => s.Day == "1");
-                                        if (monday != null)
-                                        {
-                                            @($"{monday.Course?.CourseName} ({monday.Classroom?.RoomName}) - {monday.Lecturer?.Name} {monday.Lecturer?.Surname}")
-                                        }
-                                    }
-                                </td>
+                                        <td>
+                                            @{
+                                                var monday = timeSlot.FirstOrDefault(s => s.Day == "1");
+                                                if (monday != null)
+                                                {
+                                                    @($"{monday.Course?.CourseName} ({monday.Classroom?.RoomName}) - {monday.Lecturer?.Name} {monday.Lecturer?.Surname}")
+                                                }
+                                            }
+                                        </td>
 
-                                <td>
-                                    @{
-                                        var tuesday = timeSlot.FirstOrDefault(s => s.Day == "2");
-                                        if (tuesday != null)
-                                        {
-                                            @($"{tuesday.Course?.CourseName} ({tuesday.Classroom?.RoomName}) - {tuesday.Lecturer?.Name} {tuesday.Lecturer?.Surname}")
-                                        }
-                                    }
-                                </td>
+                                        <td>
+                                            @{
+                                                var tuesday = timeSlot.FirstOrDefault(s => s.Day == "2");
+                                                if (tuesday != null)
+                                                {
+                                                    @($"{tuesday.Course?.CourseName} ({tuesday.Classroom?.RoomName}) - {tuesday.Lecturer?.Name} {tuesday.Lecturer?.Surname}")
+                                                }
+                                            }
+                                        </td>
 
-                                <td>
-                                    @{
-                                        var wednesday = timeSlot.FirstOrDefault(s => s.Day == "3");
-                                        if (wednesday != null)
-                                        {
-                                            @($"{wednesday.Course?.CourseName} ({wednesday.Classroom?.RoomName}) - {wednesday.Lecturer?.Name} {wednesday.Lecturer?.Surname}")
-                                        }
-                                    }
-                                </td>
+                                        <td>
+                                            @{
+                                                var wednesday = timeSlot.FirstOrDefault(s => s.Day == "3");
+                                                if (wednesday != null)
+                                                {
+                                                    @($"{wednesday.Course?.CourseName} ({wednesday.Classroom?.RoomName}) - {wednesday.Lecturer?.Name} {wednesday.Lecturer?.Surname}")
+                                                }
+                                            }
+                                        </td>
 
-                                <td>
-                                    @{
-                                        var thursday = timeSlot.FirstOrDefault(s => s.Day == "4");
-                                        if (thursday != null)
-                                        {
-                                            @($"{thursday.Course?.CourseName} ({thursday.Classroom?.RoomName}) - {thursday.Lecturer?.Name} {thursday.Lecturer?.Surname}")
-                                        }
-                                    }
-                                </td>
+                                        <td>
+                                            @{
+                                                var thursday = timeSlot.FirstOrDefault(s => s.Day == "4");
+                                                if (thursday != null)
+                                                {
+                                                    @($"{thursday.Course?.CourseName} ({thursday.Classroom?.RoomName}) - {thursday.Lecturer?.Name} {thursday.Lecturer?.Surname}")
+                                                }
+                                            }
+                                        </td>
 
-                                <td>
-                                    @{
-                                        var friday = timeSlot.FirstOrDefault(s => s.Day == "5");
-                                        if (friday != null)
-                                        {
-                                            @($"{friday.Course?.CourseName} ({friday.Classroom?.RoomName}) - {friday.Lecturer?.Name} {friday.Lecturer?.Surname}")
-                                        }
-                                    }
-                                </td>
+                                        <td>
+                                            @{
+                                                var friday = timeSlot.FirstOrDefault(s => s.Day == "5");
+                                                if (friday != null)
+                                                {
+                                                    @($"{friday.Course?.CourseName} ({friday.Classroom?.RoomName}) - {friday.Lecturer?.Name} {friday.Lecturer?.Surname}")
+                                                }
+                                            }
+                                        </td>
 
-                            </tr>
-                        }
-                    </tbody>
+                                    </tr>
+                                }
+                            </tbody>
 
-                    @* <tr class="cells">
-                        <td>08.00-08.50</td>
-                        <td>Mobil Programlama (1044 Lab) - Öğr. Gör. Uğur Yıldız</td>
-                        <td>Proje</td>
-                        <td>Mobil</td>
-                        <td>Bilgi</td>
-                        <td>Mobil</td>
-                    </tr>
-
-                    <tr class="cells">
-                        <td>09.00-09.50</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>YazGel</td>
-                        <td>Linux</td>
-                    </tr>
-
-                    <tr class="cells">
-                        <td>10.00-10.50</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>YazGel</td>
-                        <td>Linux</td>
-                    </tr>
-
-                    <tr class="cells">
-                        <td>11.00-11.50</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>Mobil</td>
-                        <td>YazGel</td>
-                        <td>Linux</td>
-                    </tr> *@
-
-                </table>
-                </div>
+                        </table>
+                        </div>
+                }
+                
 
             </div>
         </div>

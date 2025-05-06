@@ -8,7 +8,13 @@ namespace UDAS.ViewModels
 {
     public class ScheduleDisplayViewModel
     {
-        public List<Schedule>? Schedules { get; set; }
+        public List<YearlyScheduleGroup>? Groups { get; set; }
         
+    }
+
+    public class YearlyScheduleGroup
+    {
+        public string? Year { get; set; }
+        public List<Schedule> Schedules { get; set; }
     }
 }
