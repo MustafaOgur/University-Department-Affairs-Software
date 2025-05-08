@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bv1t5ach3f</Fingerprint>
-      <Integrity>ScQaxufFkqWiYyTuLFmIsrS2IJzoAglKtRm3XdaSfTg=</Integrity>
+      <Fingerprint>v9quzff8ki</Fingerprint>
+      <Integrity>fZCJTBbHrYXm+tt465osclz8MhGpORKcXkQhbrxR+gQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Classroom.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d44jwm9jlq</Fingerprint>
-      <Integrity>nSMPmpN5uIor4pkISg1etx9w8UNX3CH+P/zvwgnvDZc=</Integrity>
+      <Fingerprint>rgv16ata4p</Fingerprint>
+      <Integrity>dSzv2wGWKjLtEGGPCOPNU1S+1S7an0JtsaFzN/Pfn+s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySchedules.css'))</OriginalItemSpec>

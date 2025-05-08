@@ -1,3 +1,5 @@
+@model UDAS.ViewModels.ClassroomSelectionViewModel
+
 @{
     Layout = "_MenuLayout";
     ViewData["CSS"] = "/css/ClassroomSelection.css";
@@ -8,20 +10,20 @@
     <div class="center">
     <div class="center-box">
         
-        <div class="selection-box">
-        <p>Hangi dersliği görüntülemek istersiniz?</p>
-        <select name="classrooms" id="classrooms">
-            <option value="Lab">1044 Lab</option>
-            <option value="108">108</option>
-            <option value="Amfi">Amfi</option>
-        </select>
-        </div>
+        <form asp-controller="Classroom" asp-action="Classroom" method="post">
+            <div class="selection-box">
+                <p>Hangi dersliği görüntülemek istersiniz?</p>
+                <select name="classroomId" id="classrooms">
+                    @foreach( var classroom in Model.Classrooms){
+                        <option value="@classroom.Id">@classroom.RoomName</option>
+                    }
+                </select>
+            </div>
 
-        <div class="button-bar">
-        <form asp-controller="Classroom" asp-action="Classroom" method="get">
-            <button id="display-btn">Görüntüle</button>
+            <div class="button-bar">
+                <button id="display-btn">Görüntüle</button>
+            </div>
         </form>
-        </div>
         
     </div>
     </div>

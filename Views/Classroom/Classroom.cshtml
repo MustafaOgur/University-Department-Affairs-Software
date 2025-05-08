@@ -1,3 +1,5 @@
+@model UDAS.ViewModels.ClassroomViewModel
+
 @{
     Layout = "_MenuLayout";
     ViewData["CSS"] = "/css/Classroom.css";
@@ -11,7 +13,7 @@
 
       <div class="center">
         <div class="classroom-box">
-          <h1>Derslik Adı</h1>
+          <h1>@Model.Classroom?.RoomName</h1>
 
           <hr />
 
@@ -26,16 +28,49 @@
 
             <div class="mid-right">
               <div id="row1">
-                <div class="cols"><p>İd</p></div>
-                <div class="cols"><p>İsim</p></div>
+                <div class="top">
+                  <div class="cols"><p class="capital-text">İd;</p></div>
+                  <div class="cols"><p class="capital-text">Derslik Adı;</p></div>
+                </div>
+                
+                <div class="bottom">
+                  <div class="cols"><p>@Model.Classroom.Id</p></div>
+                  <div class="cols"><p>@Model.Classroom.RoomName</p></div>
+                </div>
               </div>
               <div id="row2">
-                <div class="cols"><p>Kapasite</p></div>
-                <div class="cols"><p>Ders Veren Öğretim Görevlileri</p></div>
+                <div class="top">
+                  <div class="cols"><p class="capital-text">Kapasite;</p></div>
+                  <div class="cols"><p class="capital-text">Ders Veren Öğretim Görevlileri;</p></div>
+                </div>
+                
+                <div class="bottom">
+                  <div class="cols"><p>100</p></div>
+                  <div class="cols">
+                    @foreach(var lecturer in Model.Lecturers){
+                      <p>@lecturer.Name @lecturer.Surname</p>
+                    }
+                  </div>
+                </div>
               </div>
               <div id="row3">
-                <div class="cols"><p>Kullanıdığı Günler</p></div>
-                <div class="cols"><p>Kullanıdığı Saatler</p></div>
+                <div class="top">
+                  <div class="cols"><p class="capital-text">Kullanıdığı Günler;</p></div>
+                  <div class="cols"><p class="capital-text">Kullanıdığı Saatler;</p></div>
+                </div>
+                
+                <div class="bottom">
+                  <div class="cols">
+                    @foreach(var day in Model.Days){
+                      <p>@day</p>
+                    }
+                  </div>
+                  <div class="cols">
+                    @foreach(var courseTime in Model.CourseTimes){
+                      <p>@courseTime.StartTime - @courseTime.EndTime</p>
+                    }
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -57,50 +92,63 @@
               </thead>
 
               <tbody>
-                <tr>
-                  <td>17.00-18.00</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                </tr>
 
-                <tr>
-                  <td>17.00-18.00</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                </tr>
+                @foreach(var timeSlot in Model.Schedules.GroupBy(s => new {s.StartTime, s.EndTime})){
+                  <tr>
+                    <td class="times">@timeSlot.Key.StartTime - @timeSlot.Key.EndTime</td>
 
-                <tr>
-                  <td>17.00-18.00</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                </tr>
+                    <td>
+                      @{
+                        var monday = timeSlot.FirstOrDefault(s => s.Day == "1");
+                        if (monday != null)
+                        {
+                            @($"{monday.Course?.CourseName} ({monday.Classroom?.RoomName}) - {monday.Lecturer?.Name} {monday.Lecturer?.Surname}")
+                        }
+                      }
+                    </td>
 
-                <tr>
-                  <td>17.00-18.00</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                </tr>
+                    <td>
+                      @{
+                        var tuesday = timeSlot.FirstOrDefault(s => s.Day == "2");
+                        if (tuesday != null)
+                        {
+                            @($"{tuesday.Course?.CourseName} ({tuesday.Classroom?.RoomName}) - {tuesday.Lecturer?.Name} {tuesday.Lecturer?.Surname}")
+                        }
+                      }
+                    </td>
 
-                <tr>
-                  <td>17.00-18.00</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                  <td>dafadfadf</td>
-                </tr>
+                    <td>
+                      @{
+                        var wednesday = timeSlot.FirstOrDefault(s => s.Day == "3");
+                        if (wednesday != null)
+                        {
+                            @($"{wednesday.Course?.CourseName} ({wednesday.Classroom?.RoomName}) - {wednesday.Lecturer?.Name} {wednesday.Lecturer?.Surname}")
+                        }
+                      }
+                    </td>
+
+                    <td>
+                      @{
+                        var thursday = timeSlot.FirstOrDefault(s => s.Day == "4");
+                        if (thursday != null)
+                        {
+                            @($"{thursday.Course?.CourseName} ({thursday.Classroom?.RoomName}) - {thursday.Lecturer?.Name} {thursday.Lecturer?.Surname}")
+                        }
+                      }
+                    </td>
+
+                    <td>
+                      @{
+                        var friday = timeSlot.FirstOrDefault(s => s.Day == "5");
+                        if (friday != null)
+                        {
+                            @($"{friday.Course?.CourseName} ({friday.Classroom?.RoomName}) - {friday.Lecturer?.Name} {friday.Lecturer?.Surname}")
+                        }
+                      }
+                    </td>
+                  </tr>
+                }
+
               </tbody>
             </table>
           </div>

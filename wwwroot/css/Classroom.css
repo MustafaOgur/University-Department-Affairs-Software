@@ -117,40 +117,48 @@ body{
 
 .mid-section{
     display: flex;
-}
-
-.mid-left{
     /* background-color: #007BFF; */
 }
+
+/* .mid-left{
+    background-color: #007BFF;
+} */
 
 .mid-right{
     /* background-color: aquamarine; */
     width: 75%;
-    gap: 20px;
-}
-
-.mid-right div{
-    height: 33.3%;
-    display: flex;
+    padding: 0px;
 }
 
 #row1{
-    /* background-color: rgb(101, 185, 157); */
+    height: 33.3%;
+    margin-top: 0px;
 }
 
 #row2{
-    /* background-color: rgb(53, 155, 121); */
+    height: 33.3%;
+    margin-top: 0px;
 }
 
 #row3{
-    /* background-color: rgb(119, 151, 140); */
+    height: 33.3%;
+    margin-top: 0px;
+}
+
+.top{
+    height: 20%;
+    display: flex;
+    /* background-color: rgb(175, 209, 238); */
+}
+
+.bottom{
+    height: 80%;
+    display: flex;
+    /* background-color: rgb(167, 193, 214); */
 }
 
 .cols{
-    /* background-color: antiquewhite; */
-    width: 50%;
-    height: 30%;
-    justify-content: center;
+    width: 50%; 
 }
 
 .classroom-status{
@@ -182,19 +190,23 @@ th{
 
 td{
     text-align: center;
+    background-color: gainsboro;
+    padding: 2px;
 }
 
-.hours{
-    background-color: rgba(220, 220, 220, 0.814);
-}
 
 .days{
     font-weight: bold;
-    background-color: darkgrey;
+    background-color: rgba(220, 220, 220, 0.814);
+}
+
+.times{
+    background-color: rgba(220, 220, 220, 0.814);
+    font-weight: bold;
 }
 
 tr{
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
 }
 
 p{
@@ -204,6 +216,19 @@ p{
 
     text-align: center;
     align-self: center;
+
+    margin: 0;
+}
+
+.capital-text{ 
+    font-size: 130%;
+    font-weight: bold;
+    /* background-color: #05ad03; */
+
+    /* text-align: center;
+    align-self: center;
+
+    margin: 0; */
 }
 
 hr {

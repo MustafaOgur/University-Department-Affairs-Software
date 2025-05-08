@@ -9,6 +9,7 @@ namespace UDAS.Entities
     {
         public int Id { get; set; }
         public string? RoomName { get; set; }
+        public string? Capacity { get; set; }
 
         public ICollection<Schedule> Schedules { get; set; }
         
