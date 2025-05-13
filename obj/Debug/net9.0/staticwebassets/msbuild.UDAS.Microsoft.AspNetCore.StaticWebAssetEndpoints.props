@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/UDAS/css/AddExam.19o5064khr.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"19o5064khr"},{"Name":"integrity","Value":"sha256-BSIqyStgu8Eo4Czgq8v6UmyvpOOZ51kzjWglGD0GTYA="},{"Name":"label","Value":"_content/UDAS/css/AddExam.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4740"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BSIqyStgu8Eo4Czgq8v6UmyvpOOZ51kzjWglGD0GTYA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 06:49:56 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/AddExam.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BSIqyStgu8Eo4Czgq8v6UmyvpOOZ51kzjWglGD0GTYA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4740"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BSIqyStgu8Eo4Czgq8v6UmyvpOOZ51kzjWglGD0GTYA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 06:49:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6HigO6AfJWDFho5ngjPJLLt8NoX1XJ72sNE0pPG9uxY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4740"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226HigO6AfJWDFho5ngjPJLLt8NoX1XJ72sNE0pPG9uxY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 08:33:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/AddExam.gaermw7d14.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gaermw7d14"},{"Name":"integrity","Value":"sha256-6HigO6AfJWDFho5ngjPJLLt8NoX1XJ72sNE0pPG9uxY="},{"Name":"label","Value":"_content/UDAS/css/AddExam.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4740"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226HigO6AfJWDFho5ngjPJLLt8NoX1XJ72sNE0pPG9uxY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 08:33:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/AddSchedule.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddSchedule.css'))</AssetFile>
