@@ -1,0 +1,85 @@
+@using System.Security.Claims
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/MainMenu.css"; 
+
+    var roleId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+}
+
+<!-- Tam Ekran Ortalamak için Flexbox Kullanımı -->
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row justify-content-center w-100">
+            <!-- Giriş Formu -->
+            <div class="col-12 col-md-4"> <!-- Form genişliği küçültülüyor -->
+                <form asp-action="Register" asp-controller="Account" method="post">
+
+
+                    <!-- Ad -->
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Ad</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required />
+                    </div>
+
+
+                    <!-- Soyad -->
+                    <div class="mb-3">
+                        <label for="Surname" class="form-label">Soyad</label>
+                        <input type="text" class="form-control" id="Surname" name="Surname" required />
+                    </div>
+
+
+                    <!-- Role -->
+                    @if(roleId == "0")
+                    {
+                        <div class="mb-3">
+                        <label for="RoleId" class="form-label">Rol</label>
+                        <select class="form-control" id="RoleId" name="RoleId" required>
+                            <option value="0">Admin</option>
+                            <option value="1">Lecturer</option>
+                            <option value="2">Secreter</option>
+                        </select>
+                    </div>
+                    }
+                    @if(roleId == "2")
+                    {
+                        <div class="mb-3">
+                            <label for="RoleId" class="form-label">Rol</label>
+                            <select class="form-control" id="RoleId" name="RoleId" required>
+                                <option value="3">Undefined</option>
+                            </select>
+                        </div>
+                    }
+
+
+                    <!-- Kullanıcı Adı -->
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="Username" name="Username" required />
+                    </div>
+
+
+                    <!-- Şifre -->
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Şifre</label>
+                        <input type="password" class="form-control" id="Password" name="Password" required />
+                    </div>
+                    
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div style="color: red; background-color: #f8d7da; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px;">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                        </div>
+                    }
+
+
+                    <!-- Kayıt Butonu -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>

@@ -85,5 +85,16 @@ namespace UDAS.Repositories
             }
         }
 
+        public async Task<List<Schedule>> GetInstructorSchedulesAsync(int lecturerId)
+        {
+            return await _context.Schedules
+                .Include(s => s.Course)
+                .Include(s => s.Classroom)
+                .Include(s => s.Lecturer)
+                .Where(s => s.LecturerId == lecturerId)
+                .ToListAsync();
+        }
+
+
     }
 }

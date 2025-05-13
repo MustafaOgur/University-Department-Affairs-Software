@@ -1,0 +1,26 @@
+@model List<UDAS.ViewModels.UserViewModel>
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/DisplaySchedules.css";
+}
+
+<!-- Tam Ekran Ortalamak için Flexbox Kullanımı -->
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row justify-content-center w-100">
+        <!-- Öğretim Elemanı Seçme Formu -->
+        <div class="col-12 col-md-4"> <!-- Form genişliği küçültülüyor -->
+            <form method="get" asp-controller="InstructorSchedule" asp-action="Index">
+                <label for="lecturerSelect">Bir Öğretim Elemanı Seçin:</label>
+                <select id="lecturerSelect" name="lecturerId" required class="form-control">
+                    <option value="">-- Seçiniz --</option>
+                    @foreach (var user in Model)
+                    {
+                        <option value="@user.Id">@user.Name @user.Surname</option>
+                    }
+                </select>
+
+                <button type="submit" class="btn btn-primary btn-lg mt-3">Göster</button>
+            </form>
+        </div>
+    </div>
+</div>

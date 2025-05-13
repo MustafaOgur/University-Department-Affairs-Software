@@ -1,0 +1,52 @@
+@model IEnumerable<UDAS.ViewModels.UserViewModel>
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/MainMenu.css";
+    ViewData["Title"] = "Kullanıcı Yetkilendirme";
+}
+
+<h2>Kullanıcı Listesi</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr style="background-color: #f0f0f0;">
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Kullanıcı Adı</th>
+            <th>Rol</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var user in Model)
+            {
+                <tr>
+    <td>@user.Name</td>
+                    <td>@user.Surname</td>
+                    <td>@user.Username</td>
+                    <td>
+                        <form asp-action="UpdateRole" asp-controller="Account" method="post" style="display: flex; gap: 8px; align-items: center;">
+                            <input type="hidden" name="Id" value="@user.Id" />
+                            <select name="RoleId" class="form-control">
+                                <option value="0" selected="@(user.RoleId == "0")">Admin</option>
+                                <option value="1" selected="@(user.RoleId == "1")">Lecturer</option>
+                                <option value="2" selected="@(user.RoleId == "2")">Secreter</option>
+                                <option value="3" selected="@(user.RoleId == "3")">Undefined</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary btn-sm">Güncelle</button>
+                        </form>
+                    </td>
+                </tr>
+
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" style="text-align: center;">Kayıtlı kullanıcı bulunamadı.</td>
+            </tr>
+        }
+    </tbody>
+</table>

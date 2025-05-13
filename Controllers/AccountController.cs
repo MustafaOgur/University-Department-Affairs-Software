@@ -13,6 +13,10 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using UDAS.Entities;
+using System.Security.Cryptography;
+using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace UDAS.Controllers
 {
@@ -30,6 +34,11 @@ namespace UDAS.Controllers
         }
 
 
+
+
+
+
+
         // ---------------------------- İdari Giriş ------------------------------------
         [AllowAnonymous]
         [HttpGet]
@@ -45,16 +54,19 @@ namespace UDAS.Controllers
         {
             if(ModelState.IsValid)
             {
-                var user = _context.Users.FirstOrDefault(u => u.UserName == model.UserName && u.PasswordHash == model.Password);
+                var hashedPassword = ComputeSha256Hash(model.Password);
+                var user = _context.Users.FirstOrDefault(u => u.UserName == model.UserName && u.PasswordHash == hashedPassword  
+                                                        && (u.RoleId == "0" || u.RoleId == "2"));
                 
                 if (user != null)
                 {   
 
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Name, user.Id.ToString()),
-                        new Claim(ClaimTypes.Name, user.UserName),
-                        new Claim(ClaimTypes.Name, user.RoleId),
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.Name),
+                        new Claim(ClaimTypes.Surname, user.Surname),
+                        new Claim(ClaimTypes.Role, user.RoleId.ToString()),
                     };
                     
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -74,6 +86,11 @@ namespace UDAS.Controllers
 
             return View(model);
         }
+
+
+
+
+
 
         // ---------------------------- Akademik Giriş ------------------------------------
         [HttpGet]
@@ -91,16 +108,19 @@ namespace UDAS.Controllers
         {
             if(ModelState.IsValid)
             {
-                var user = _context.Users.FirstOrDefault(u => u.UserName == model.UserName && u.PasswordHash == model.Password);
+                var hashedPassword = ComputeSha256Hash(model.Password);
+                var user = _context.Users.FirstOrDefault(u => u.UserName == model.UserName && u.PasswordHash == hashedPassword  
+                                                        && u.RoleId == "1");
                 
                 if (user != null)
                 {   
 
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Name, user.Id.ToString()),
-                        new Claim(ClaimTypes.Name, user.UserName),
-                        new Claim(ClaimTypes.Name, user.RoleId),
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.Name),
+                        new Claim(ClaimTypes.Surname, user.Surname),
+                        new Claim(ClaimTypes.Role, user.RoleId.ToString())
                     };
                     
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -123,6 +143,13 @@ namespace UDAS.Controllers
         }
 
 
+
+
+
+
+
+
+
         [HttpPost]
         public async Task<IActionResult> LogOut()
         {
@@ -133,16 +160,147 @@ namespace UDAS.Controllers
 
         }
 
+
+
+
+
+
+
         [Authorize]
         [HttpGet]
         [Route("Menu")]
         public IActionResult Menu() => RedirectToAction("Index", "MainMenu");
 
 
+
+
+
+
+
+
+
+
+        [Authorize]
+        [HttpGet]
+        [Route("Register")]
+        public IActionResult  Register()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+        [Authorize]
+        [HttpPost]
+        [Route("Register")]
+        public IActionResult  Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var existingUser = _context.Users.FirstOrDefault(u => u.UserName == model.Username);
+                
+                if (existingUser != null)
+                {
+                    ModelState.AddModelError("", "Bu kullanıcı adı zaten alınmış.");
+                    return View(model);
+                }
+
+                // Şifre hashleme
+                var hashedPassword = ComputeSha256Hash(model.Password);
+
+                var user = new User
+                {
+                    Name = model.Name,
+                    Surname = model.Surname,
+                    RoleId = model.RoleId,
+                    UserName = model.Username,
+                    PasswordHash = hashedPassword
+                };
+
+                _context.Users.Add(user);
+                _context.SaveChanges();
+
+                return View();
+            }
+
+            return View(model);
+        }
+
+
+
+
+
+
+        [Authorize]
+        [HttpPost]
+        [Route("Authorization")]
+        public IActionResult UpdateRole(UserViewModel model)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == model.Id);
+            if (user != null)
+            {
+                user.RoleId = model.RoleId;
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Authorization");
+        }
+
+
+
+
+
+
+        [Authorize]
+        [HttpGet]
+        [Route("Authorization")]
+        public async Task<IActionResult> Authorization(UserViewModel model)
+        {
+            var users = await _context.Users.ToListAsync();
+
+            var viewModelList = users.Select(user => new UserViewModel
+            {
+                Id = (int)user.Id,
+                Name = user.Name,
+                Surname = user.Surname,
+                Username = user.UserName,
+                Password = "",
+                RoleId = user.RoleId
+            }).ToList();
+
+            return View(viewModelList);
+        }
+
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View("Error!");
+            return View("Error");
+        }
+
+
+
+
+
+        private string ComputeSha256Hash(string rawData)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+                var builder = new StringBuilder();
+                foreach (var b in bytes)
+                    builder.Append(b.ToString("x2"));
+
+                return builder.ToString();
+            }
         }
     }
 }
