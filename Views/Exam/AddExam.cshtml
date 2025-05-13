@@ -1,0 +1,77 @@
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/AddExam.css"; 
+}
+
+  
+    <div class="left"></div>
+
+    <div class="center">
+      <div class="exam-box">
+        <div class="date-row">
+          <div class="date">
+            <p>Tarih:</p>
+            <input type="date" class="date-input" />
+          </div>
+
+          <div class="hour">
+            <p>Saat Aralığı:</p>
+            <select name="StartTimes" id="StartTimes">
+              <option value="12">12:00</option>
+              <option value="13">13:00</option>
+              <option value="14">14:00</option>
+            </select>
+            <p>-</p>
+            <select name="EndTimes" id="EndTimes">
+              <option value="13">13:00</option>
+              <option value="14">14:00</option>
+              <option value="15">15:00</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lecture-row">
+          <div class="lecture">
+            <p>Ders:</p>
+            <select name="Lectures" id="Lectures">
+              <option value="Makine">Makine</option>
+              <option value="Mobil">Mobil</option>
+              <option value="Optimizasyon">Optimizasyon</option>
+            </select>
+          </div>
+
+          <div class="classroom">
+            <p>Derslik:</p>
+            <select name="Classrooms" id="Classrooms">
+              <option value="Amfi">Amfi</option>
+              <option value="108">108</option>
+              <option value="Z054">Z054</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="supervisor-row">
+          <div class="supervisor">
+            <p>Gözetmen:</p>
+            <select name="Supervisors" id="Supervisors">
+              <option value="Melike">Melike</option>
+              <option value="Şevval">Şevval</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="delete-btn">Programı Sil</button>
+          <button id="save-btn">Programı Kaydet</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right"></div>
+  
+    
+      
+    
+
+

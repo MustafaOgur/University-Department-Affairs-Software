@@ -794,8 +794,10 @@ D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\UDAS.pdb
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\UDAS.genruntimeconfig.cache
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\ref\UDAS.dll
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\njqxarhh1x-8x53ba2fvz.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ubkpw135cj-ja6zyb54uy.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\23e2ev3395-ibufdo7379.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\um1smutvqw-nmhc2ml3ra.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jck5g1v2fd-rgv16ata4p.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\4n00pywn7m-v9quzff8ki.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\4n00pywn7m-k2rgwz9ntz.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ubkpw135cj-ay2qnppya9.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jgqz4ak8dv-19o5064khr.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\hg51exox8x-hy8p50z943.gz
