@@ -12,6 +12,5 @@ namespace UDAS.Entities
         public string? Year { get; set; }
 
         public ICollection<Schedule> Schedules { get; set; }
-        public ICollection<ExamSchedule> ExamSchedules { get; set; }
     }
 }

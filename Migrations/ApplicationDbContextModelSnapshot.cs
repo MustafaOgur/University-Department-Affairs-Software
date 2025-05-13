@@ -69,41 +69,6 @@ namespace UDAS.Migrations
                     b.ToTable("CourseTimes");
                 });
 
-            modelBuilder.Entity("UDAS.Entities.ExamSchedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("ClassroomId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("CourseId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Date")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("EndTime")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("StartTime")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("SupervisorId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClassroomId");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("SupervisorId");
-
-                    b.ToTable("ExamSchedules");
-                });
-
             modelBuilder.Entity("UDAS.Entities.Schedule", b =>
                 {
                     b.Property<int>("Id")
@@ -184,27 +149,6 @@ namespace UDAS.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("WeekDays");
-                });
-
-            modelBuilder.Entity("UDAS.Entities.ExamSchedule", b =>
-                {
-                    b.HasOne("UDAS.Entities.Classroom", "Classroom")
-                        .WithMany()
-                        .HasForeignKey("ClassroomId");
-
-                    b.HasOne("UDAS.Entities.Course", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId");
-
-                    b.HasOne("UDAS.Entities.User", "Supervisor")
-                        .WithMany()
-                        .HasForeignKey("SupervisorId");
-
-                    b.Navigation("Classroom");
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Supervisor");
                 });
 
             modelBuilder.Entity("UDAS.Entities.Schedule", b =>

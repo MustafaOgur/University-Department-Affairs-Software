@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\UDAS.rzgvlboxcy.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddExam.css",
-      "PackagePath": "staticwebassets\\css\\AddExam.css"
-    },
-    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSchedule.css",
       "PackagePath": "staticwebassets\\css\\AddSchedule.css"
     },
@@ -19,10 +15,6 @@
     {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\ClassroomSelection.css",
       "PackagePath": "staticwebassets\\css\\ClassroomSelection.css"
-    },
-    {
-      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplayExam.css",
-      "PackagePath": "staticwebassets\\css\\DisplayExam.css"
     },
     {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySchedules.css",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UDAS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30510478bdee32ff9901442bce3b774bb7e6fd87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a287ffc4babce0b0e21dc0686d8ca5a42aa7e7a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("UDAS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UDAS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

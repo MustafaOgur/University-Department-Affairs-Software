@@ -20,6 +20,5 @@ namespace UDAS.Data
         public DbSet<WeekDay> WeekDays { get; set; }
         public DbSet<CourseTime> CourseTimes { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
-        public DbSet<ExamSchedule> ExamSchedules { get; set; }
     }
 }

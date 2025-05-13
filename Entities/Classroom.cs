@@ -12,7 +12,6 @@ namespace UDAS.Entities
         public string? Capacity { get; set; }
 
         public ICollection<Schedule> Schedules { get; set; }
-        public ICollection<ExamSchedule> ExamSchedules { get; set; }
         
     }
 }

@@ -1,23 +1,5 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>UDAS</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/UDAS</BasePath>
-      <RelativePath>css/AddExam.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gaermw7d14</Fingerprint>
-      <Integrity>6HigO6AfJWDFho5ngjPJLLt8NoX1XJ72sNE0pPG9uxY=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddSchedule.css'))">
       <SourceType>Package</SourceType>
       <SourceId>UDAS</SourceId>
@@ -48,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k2rgwz9ntz</Fingerprint>
-      <Integrity>9DaTP0C9qVHyS+W0sQqMo82XEP/2dg7qb90RbEfdHSg=</Integrity>
+      <Fingerprint>v9quzff8ki</Fingerprint>
+      <Integrity>fZCJTBbHrYXm+tt465osclz8MhGpORKcXkQhbrxR+gQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Classroom.css'))</OriginalItemSpec>
@@ -66,29 +48,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ay2qnppya9</Fingerprint>
-      <Integrity>juMKb6EE6Pz0jUApryk9A+91dY1MRtMmc9WWMrIi/VE=</Integrity>
+      <Fingerprint>ja6zyb54uy</Fingerprint>
+      <Integrity>m8ivOHAc2mR8e3KZRkanfRmfjFpyUTdJtvV0zBMKnWk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ClassroomSelection.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplayExam.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>UDAS</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/UDAS</BasePath>
-      <RelativePath>css/DisplayExam.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hy8p50z943</Fingerprint>
-      <Integrity>mY5xz8bf5ns+5Dp3Tan4V/bTZcDhTiXP1+LgZS3cgIA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplayExam.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySchedules.css'))">
       <SourceType>Package</SourceType>

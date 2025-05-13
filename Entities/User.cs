@@ -19,6 +19,5 @@ namespace UDAS.Entities
         
 
         public ICollection<Schedule> Schedules { get; set; }
-        public ICollection<ExamSchedule> ExamSchedules { get; set; }
     }
 }
