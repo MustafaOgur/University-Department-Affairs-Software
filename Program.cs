@@ -24,6 +24,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 // Repository'i bağımlılık enjeksiyonu (DI) konteynerine scoped olarak kaydetme !!!!!
 builder.Services.AddScoped<CourseScheduleRepository>();
 builder.Services.AddScoped<ClassroomDisplayRepository>();
+builder.Services.AddScoped<ExamScheduleRepository>();
 
 
 

@@ -1,0 +1,305 @@
+/* Ortak kısım */
+body{
+    margin: auto;
+    box-sizing: border-box;
+    background: rgba(180, 180, 180, 0.684);
+    
+}
+
+.header{
+    display: flex;
+    background-color: #05ad03;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav-buttons-div{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.logo-image{
+    background-color: #007BFF;
+    background: none;
+    height: 65px;
+}
+
+#logo{
+    height: 65px;
+}
+
+.logout-div{
+    margin-left: auto;
+}
+
+.nav-buttons{
+    height: 65px; 
+    font-size: 20px;
+    font-family: 'Calibri', Times, serif;
+    background: none;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255)
+}
+
+.nav-buttons:hover{
+    background-color: #069b03;
+}
+
+.nav-buttons:active{
+    background-color: green;
+}
+
+/* Ortak kısım sonu */
+
+/* Kısmi ortak kısım */
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: auto;
+}
+
+.left {
+  flex: 1;
+  /* background-color: #ff4545;  */
+
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 60px;
+}
+
+.center {
+  flex: 2;
+  /* background-color: #2e95bd; */
+
+  padding-top: 60px;
+}
+
+.right {
+  flex: 1;
+  /*background-color: #48b159; */
+
+  margin-left: 10px;
+
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 60px;
+}
+
+/* Kısmi ortak kısım sonu */
+
+.exam-box {
+  background-color: #efefef;
+
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+
+  height: auto;
+  width: auto;
+
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+
+  box-shadow: 8px 3px 5px rgb(132, 136, 138);
+}
+
+.date-row {
+  display: flex;
+
+  align-items: center;
+}
+
+.date {
+  width: 50%;
+
+  display: flex;
+}
+
+.date p {
+  margin-right: 44px;
+  margin-left: 52px;
+}
+
+.hour {
+  width: 50%;
+
+  display: flex;
+  padding-left: 117px;
+}
+
+.hour p {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* Tarih satırı bitti */
+
+.lecture-row {
+  display: flex;
+
+  align-items: center;
+}
+
+.lecture {
+  width: 50%;
+
+  display: flex;
+}
+
+.lecture p {
+  margin-right: 45px;
+  margin-left: 54px;
+}
+
+.classroom {
+  width: 50%;
+
+  display: flex;
+}
+
+.classroom p {
+  margin-right: 42px;
+  margin-left: 75px;
+}
+
+/* Ders satırı bitti */
+
+.supervisor-row {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.supervisor {
+  width: 50%;
+
+  display: flex;
+}
+
+.supervisor p {
+  margin-right: 11px;
+  margin-left: 53px;
+}
+
+/* Gözetmen satırı bitti */
+
+select {
+  height: 35px;
+  /* margin-left: 25px; */
+  margin-top: 14px;
+
+  font-size: 95%;
+
+  border-radius: 8px;
+  border: 2px solid #2984e7;
+  background: #f8f9fa; /* Arka plan rengi */
+  cursor: pointer;
+}
+
+p {
+  font-size: 125%;
+}
+
+.date-input {
+  appearance: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  height: 25px;
+}
+
+.date-input:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.date-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #4a90e2;
+}
+
+#Classrooms {
+  width: 100px;
+}
+
+#Supervisors {
+  width: 130px;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 1 eşit sütun */
+
+  gap: 25px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-radius: 5px;
+  border-style: solid;
+  border-top-width: 2px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+
+button {
+  height: 65px;
+  font-size: 20px;
+  font-family: "Calibri", Times, serif;
+  background: none;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#delete-btn {
+  background-color: #e63200;
+  border-radius: 10px;
+}
+
+#delete-btn:hover {
+  background-color: #c52f05;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
+}
+
+#delete-btn:active {
+  background-color: #ad2905; /* Basılıyken daha koyu */
+  transform: scale(0.98); /* Hafif küçülme efekti */
+}
+
+#save-btn {
+  background-color: #0ce133;
+  border-radius: 10px;
+}
+
+#save-btn:hover {
+  background-color: #1bcf3c;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
+}
+
+#save-btn:active {
+  background-color: rgb(24, 181, 53); /* Basılıyken daha koyu */
+  transform: scale(0.98); /* Hafif küçülme efekti */
+}
