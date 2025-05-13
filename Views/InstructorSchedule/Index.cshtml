@@ -1,0 +1,120 @@
+@using System.Security.Claims
+@model UDAS.ViewModels.ScheduleDisplayViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/DisplaySchedules.css";
+
+    var lecturerName = User.FindFirst(ClaimTypes.Name)?.Value;
+    var lecturerSurname = User.FindFirst(ClaimTypes.Surname)?.Value;
+
+    // Zaman dilimlerini DateTime üzerinden kıyaslayabilmek için güncelledik
+    var timeSlots = new List<(TimeSpan Start, TimeSpan End)>
+    {
+        (TimeSpan.Parse("08:00"), TimeSpan.Parse("09:00")),
+        (TimeSpan.Parse("09:00"), TimeSpan.Parse("10:00")),
+        (TimeSpan.Parse("10:00"), TimeSpan.Parse("11:00")),
+        (TimeSpan.Parse("11:00"), TimeSpan.Parse("12:00")),
+        (TimeSpan.Parse("12:00"), TimeSpan.Parse("13:00")),
+        (TimeSpan.Parse("13:00"), TimeSpan.Parse("14:00")),
+        (TimeSpan.Parse("14:00"), TimeSpan.Parse("15:00")),
+        (TimeSpan.Parse("15:00"), TimeSpan.Parse("16:00")),
+        (TimeSpan.Parse("16:00"), TimeSpan.Parse("17:00"))
+    };
+}
+
+<div class="left"></div>
+
+<div class="center">
+    <div class="table-div">
+
+        <table class="schedule" id="printable-table">
+            <thead>
+                <tr class="days">
+                    <th></th>
+                    <th>Pazartesi</th>
+                    <th>Salı</th>
+                    <th>Çarşamba</th>
+                    <th>Perşembe</th>
+                    <th>Cuma</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var slot in timeSlots)
+                {
+                    <tr class="cells">
+                        <td class="times">@slot.Start.ToString(@"hh\:mm") - @slot.End.ToString(@"hh\:mm")</td>
+
+                        @for (int day = 1; day <= 5; day++)
+                        {
+                            <td>
+                                @{
+                                    var lesson = Model.Groups
+                                        .SelectMany(g => g.Schedules)
+                                        .FirstOrDefault(s =>
+                                            TimeSpan.Parse(s.StartTime) <= slot.Start &&
+                                            TimeSpan.Parse(s.EndTime) > slot.Start &&
+                                            s.Day == day.ToString());
+
+                                    if (lesson != null)
+                                    {
+                                        <text>
+                                            @lesson.Course?.CourseName (@lesson.Classroom?.RoomName)
+                                        </text>
+                                    }
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+            
+        </table>
+        <button onclick="printSchedule()"" class="print-btn">🖨 Yazdır</button>
+    </div>
+</div>
+
+<div class="right"></div>
+
+
+<!-- Printable tablo JS kodu -->
+<script>
+    function printSchedule() {
+        const content = document.getElementById('printable-table').outerHTML;
+        const style = `
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    border: 1px solid #000;
+                    padding: 5px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #f0f0f0;
+                }
+            </style>
+        `;
+
+        const win = window.open('', '', 'height=700,width=900');
+        win.document.write('<h1>@lecturerName ' + '@lecturerSurname' + '</h1>');
+        win.document.write(style);
+        win.document.write('</head><body>');
+        win.document.write(content);
+        win.document.write('</body></html>');
+        win.document.close();
+
+        // Yazdırma penceresinin tamamen yüklenmesini bekle
+        win.onload = function () {
+            win.print();
+        };
+    }
+</script>
+
