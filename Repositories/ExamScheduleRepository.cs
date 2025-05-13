@@ -35,6 +35,14 @@ namespace UDAS.Repositories
             return await _context.CourseTimes.ToListAsync();
         }
 
+        public async Task<List<ExamSchedule>> GetExamSchedulesAsync(){
+            return await _context.ExamSchedules
+            .Include(s => s.Course)
+            .Include(s => s.Classroom)
+            .Include(s => s.Supervisor)
+            .ToListAsync();
+        }
+
         public bool IsAvailable(ExamSchedule examSchedule)
         {   
             bool conflictExists = _context.ExamSchedules

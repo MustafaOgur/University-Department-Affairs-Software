@@ -1,4 +1,4 @@
-
+@model UDAS.ViewModels.ExamDisplayViewModel
 
 @{
     Layout = "_MenuLayout";
@@ -29,45 +29,17 @@
             </thead>
 
             <tbody>
-              <tr class="cells">
-                <td class="dates">14 Nisan 2025 Pazartesi</td>
-                <td>12:00-13:00</td>
-                <td>Mobil Programlama - Öğr. Gör. Uğur Yıldız</td>
-                <td>Melike</td>
-                <td>Amfi</td>
-              </tr>
 
-              <tr class="cells">
-                <td class="dates">14 Nisan 2025 Pazartesi</td>
-                <td>12:00-13:00</td>
-                <td>Mobil Programlama - Öğr. Gör. Uğur Yıldız</td>
-                <td>Melike</td>
-                <td>Amfi</td>
-              </tr>
+              @foreach(var examSchedule in Model.ExamSchedules){
+                <tr class="cells">
+                  <td class="dates">@examSchedule.Date</td>
+                  <td>@examSchedule.StartTime - @examSchedule.EndTime</td>
+                  <td>@examSchedule.Course?.CourseName</td>
+                  <td>@examSchedule.Supervisor?.Name @examSchedule.Supervisor?.Surname</td>
+                  <td>@examSchedule.Classroom?.RoomName</td>
+                </tr>
+              }
 
-              <tr class="cells">
-                <td class="dates">14 Nisan 2025 Pazartesi</td>
-                <td>12:00-13:00</td>
-                <td>Mobil Programlama - Öğr. Gör. Uğur Yıldız</td>
-                <td>Melike</td>
-                <td>Amfi</td>
-              </tr>
-
-              <tr class="cells">
-                <td class="dates">14 Nisan 2025 Pazartesi</td>
-                <td>12:00-13:00</td>
-                <td>Mobil Programlama - Öğr. Gör. Uğur Yıldız</td>
-                <td>Melike</td>
-                <td>Amfi</td>
-              </tr>
-
-              <tr class="cells">
-                <td class="dates">14 Nisan 2025 Pazartesi</td>
-                <td>12:00-13:00</td>
-                <td>Mobil Programlama - Öğr. Gör. Uğur Yıldız</td>
-                <td>Melike</td>
-                <td>Amfi</td>
-              </tr>
             </tbody>
           </table>
         </div>

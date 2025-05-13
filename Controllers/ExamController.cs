@@ -91,7 +91,15 @@ public class ExamController : Controller
     [HttpGet]
     public async Task<IActionResult> DisplayExam()
     {   
-        return View();
+        var examSchedules = await _examScheduleRepository.GetExamSchedulesAsync();
+
+        var viewModel = new ExamDisplayViewModel{
+
+            ExamSchedules = examSchedules
+
+        };
+
+        return View(viewModel);
     }
 
 }
