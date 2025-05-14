@@ -1,0 +1,50 @@
+@model UDAS.ViewModels.ExamDisplayViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/DisplayExam.css"; 
+}
+  
+    <div class="left"></div>
+
+    <div class="center">
+        <div class="table-div">
+          <table class="schedule">
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 14%" />
+              <col style="width: 40%" />
+              <col style="width: 12%" />
+              <col style="width: 12%" />
+            </colgroup>
+
+            <thead>
+              <tr class="hours">
+                <th>TARİH</th>
+                <th>SAAT</th>
+                <th>DERS ADI</th>
+                <th>GÖZETMEN</th>
+                <th>DERSLİK</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              @foreach(var examSchedule in Model.ExamSchedules){
+                <tr class="cells">
+                  <td class="dates">@examSchedule.Date</td>
+                  <td>@examSchedule.StartTime - @examSchedule.EndTime</td>
+                  <td>@examSchedule.Course?.CourseName</td>
+                  <td>@examSchedule.Supervisor?.Name @examSchedule.Supervisor?.Surname</td>
+                  <td>@examSchedule.Classroom?.RoomName</td>
+                </tr>
+              }
+
+            </tbody>
+          </table>
+        </div>
+    </div>
+
+    <div class="right"></div>  
+
+        

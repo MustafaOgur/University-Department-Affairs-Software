@@ -1,0 +1,105 @@
+@model UDAS.ViewModels.ExamAddViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/AddExam.css"; 
+}
+
+@{
+    if (!ViewData.ModelState.IsValid)
+    {
+        /* <script src="/js/site.js"></script> */
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Hata',
+                text: 'Bu sınıf girilen tarih için dolu, lütfen farklı bir zaman aralığı seçin',
+            });
+        </script>
+    }
+}
+  
+    <div class="left"></div>
+
+    <div class="center">
+      <div class="exam-box">
+
+        <form method="post" action="/Exam/AddExam">
+          <div class="date-row">
+            <div class="date">
+              <p>Tarih:</p>
+              <input name="Date" type="date" class="date-input" />
+            </div>
+
+            <div class="hour">
+              <p>Saat Aralığı:</p>
+              <select name="StartTime" id="StartTimes">
+                
+                @foreach(var time in Model.CourseTimes){
+                  <option value="@time.StartTime">@time.StartTime</option>
+                }
+
+              </select>
+              <p>-</p>
+              <select name="EndTime" id="EndTimes">
+                
+                @foreach(var time in Model.CourseTimes){
+                  <option value="@time.EndTime">@time.EndTime</option>
+                }
+
+              </select>
+            </div>
+          </div>
+
+          <div class="lecture-row">
+            <div class="lecture">
+              <p>Ders:</p>
+              <select name="CourseId" id="Courses">
+                
+                @foreach(var course in Model.Courses){
+                  <option value="@course.Id">@course.CourseName</option>
+                }
+
+              </select>
+            </div>
+
+            <div class="classroom">
+              <p>Derslik:</p>
+              <select name="ClassroomId" id="Classrooms">
+                
+                @foreach(var classroom in Model.Classrooms){
+                  <option value="@classroom.Id">@classroom.RoomName</option>
+                }
+
+              </select>
+            </div>
+          </div>
+
+          <div class="supervisor-row">
+            <div class="supervisor">
+              <p>Gözetmen:</p>
+              <select name="SupervisorId" id="Supervisors">
+                
+                @foreach(var supervisor in Model.Supervisors){
+                  <option value="@supervisor.Id">@supervisor.Name @supervisor.Surname</option>
+                }
+
+              </select>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button type="submit" name="action" value="delete" id="delete-btn">Programı Sil</button>
+            <button type="submit" name="action" value="save" id="save-btn">Programı Kaydet</button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+
+    <div class="right"></div>
+  
+    
+      
+    
