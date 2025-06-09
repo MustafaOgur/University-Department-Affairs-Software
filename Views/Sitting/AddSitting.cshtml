@@ -31,27 +31,25 @@
 
         <div class="classroom-details">
         <div class="left-side">
-            <div class="listbox">
-            <p>Ali</p>
-            <p>Mehmet</p>
-            <p>Kazım</p>
+            <div class="listbox" id="listbox">
+                <!-- öğrenci isimleri, js'de ---->
             </div>
 
             <div class="buttons-div">
-            <button id="add-btn">Ekle</button>
-            <button id="delete-btn">Sil</button>
+                <button id="add-btn">Ekle</button>
+                <button id="delete-btn">Sil</button>
             </div>
         </div>
 
         <div class="right-side">
             <div class="normal-size">
-            <p class="bold-text">Normal Kapasite;</p>
-            <p class="capacity">34 / <span id="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
+                <p class="bold-text">Normal Kapasite;</p>
+                <p class="capacity">34 / <span id="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
             </div>
 
             <div class="exam-size">
-            <p class="bold-text">Sınav Kapasitesi;</p>
-            <p class="capacity">34/50</p>
+                <p class="bold-text">Sınav Kapasitesi;</p>
+                <p class="capacity">34/50</p>
             </div>
         </div>
         </div>

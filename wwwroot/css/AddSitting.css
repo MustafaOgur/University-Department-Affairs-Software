@@ -227,7 +227,8 @@ body {
   height: 130px;
 
   background-color: #ffffff;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .listbox p {
