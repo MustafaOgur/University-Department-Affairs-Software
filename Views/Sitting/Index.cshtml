@@ -1,0 +1,23 @@
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/MainMenu.css";
+}
+
+<div class="container">
+    <div class="left"></div>
+
+    <div class="center">
+        <div class="selection-box">
+            <div id="row-1">
+                <button class="selection-btn">Oturma Düzenlerini Görüntüle</button>
+            </div>
+            <div id="row-2">
+                <form asp-controller="Sitting" asp-action="AddSitting" method="get">
+                    <button class="selection-btn">Yeni Oturma Düzeni Oluştur</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="right"></div>
+</div>

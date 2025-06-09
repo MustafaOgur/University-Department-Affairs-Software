@@ -1,0 +1,147 @@
+@model UDAS.ViewModels.SittingAddViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/AddSitting.css";
+}
+
+
+
+
+    <div class="left"></div>
+
+    <div class="center">
+    <div class="sitting-box">
+        <div class="name-bar">
+        <p id="Title">Oturma Planı Adı:</p>
+        <input type="text" id="sitting-name" value="Oturma Programı - 1" />
+        </div>
+
+        <div class="classroom-row">
+        <p id="selection">Hangi dersliği seçmek istersiniz?</p>
+        <select name="classrooms" id="classrooms">
+
+            @foreach(var classroom in Model.Classrooms){
+                <option value="@classroom.Id" data-capacity="@classroom.Capacity">@classroom.RoomName</option>
+            }
+
+        </select>
+        <button id="select-btn">Seç</button>
+        </div>
+
+        <div class="classroom-details">
+        <div class="left-side">
+            <div class="listbox">
+            <p>Ali</p>
+            <p>Mehmet</p>
+            <p>Kazım</p>
+            </div>
+
+            <div class="buttons-div">
+            <button id="add-btn">Ekle</button>
+            <button id="delete-btn">Sil</button>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="normal-size">
+            <p class="bold-text">Normal Kapasite;</p>
+            <p class="capacity">34 / <span id="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
+            </div>
+
+            <div class="exam-size">
+            <p class="bold-text">Sınav Kapasitesi;</p>
+            <p class="capacity">34/50</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="classroom-display">
+        <div class="column">
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+
+            <div class="groups">
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" />
+                <div class="check-label">[1]</div>
+            </label>
+            </div>
+        </div>
+        </div>
+
+        <div class="button-bar">
+        <button id="create-btn">Rastgele Oturma Düzeni Oluştur</button>
+        </div>
+    </div>
+
+    <div class="blank-div"></div>
+    </div>
+
+    <div class="right"></div>
+
+    <script src="/js/AddSitting.js"></script>

@@ -25,6 +25,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddScoped<CourseScheduleRepository>();
 builder.Services.AddScoped<ClassroomDisplayRepository>();
 builder.Services.AddScoped<ExamScheduleRepository>();
+builder.Services.AddScoped<SittingPlanRepository>();
 
 
 // // ---------------------------------- Session Ayarı -------------------------------------

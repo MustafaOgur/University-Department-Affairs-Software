@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\AddSchedule.css"
     },
     {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\AddSitting.css",
+      "PackagePath": "staticwebassets\\css\\AddSitting.css"
+    },
+    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\Classroom.css",
       "PackagePath": "staticwebassets\\css\\Classroom.css"
     },
@@ -55,6 +59,10 @@
     {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\img\\derslik.png",
       "PackagePath": "staticwebassets\\img\\derslik.png"
+    },
+    {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\AddSitting.js",
+      "PackagePath": "staticwebassets\\js\\AddSitting.js"
     },
     {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js",
