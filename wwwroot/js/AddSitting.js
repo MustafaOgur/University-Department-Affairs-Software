@@ -1,19 +1,38 @@
 
-
+// Dinamik kapasite görüntüleme
 const selectElement = document.getElementById("classrooms");
-const capacityDisplay = document.getElementById("real-max-capacity");
+const capacityDisplays = document.querySelectorAll(".real-max-capacity");
 const showButton = document.getElementById("select-btn");
 
+// Burayı eski haline getirmen gerekebilir
 showButton.addEventListener("click", function () {
   const selectedOption = selectElement.options[selectElement.selectedIndex];
   const capacity = selectedOption.getAttribute("data-capacity");
-
+  
   if (capacity) {
-    capacityDisplay.textContent = capacity;
+    capacityDisplays.forEach( span => {
+      span.textContent = capacity;
+    });
   } else {
-    capacityDisplay.textContent = "-";
+    capacityDisplays.forEach( span => {
+      span.textContent = "-";
+    });
   }
+
+  console.log(seatStatus);
+
 });
+
+// Rastgele öğrenci isimleri
+const studentNumberDisplayers = document.querySelectorAll(".student-number");
+
+function changeStudentNumberText(newVal) {
+  studentNumberDisplayers.forEach( span => {
+    span.textContent = newVal;
+  });
+}
+
+let currentIndex = 0;
 
 const names = [
 "Musa Taş",
@@ -126,4 +145,100 @@ selectedNames.forEach(name => {
   const p = document.createElement("p");
   p.textContent = name;
   div.appendChild(p);
+  currentIndex++;
 });
+
+changeStudentNumberText(currentIndex);
+
+// Öğrenci ekle ve sil
+const addBtn = document.getElementById("add-btn");
+const deleteBtn = document.getElementById("delete-btn");
+
+addBtn.addEventListener("click", function () {
+
+  if (currentIndex < names.length){
+    const p = document.createElement("p");
+    p.textContent = names[currentIndex];
+    div.appendChild(p);
+
+    selectedNames.push(names[currentIndex]);
+
+    currentIndex++;
+    changeStudentNumberText(currentIndex);
+  } else {
+    alert("Tüm öğrenciler zaten eklendi.");
+  }
+  
+});
+
+deleteBtn.addEventListener("click", function () {
+
+  if (div.lastChild){
+    div.removeChild(div.lastChild);
+    
+    selectedNames.pop();
+
+    currentIndex--;
+    changeStudentNumberText(currentIndex);
+  } else {
+    alert("Silinecek öğrenci yok!");
+  }
+  
+});
+
+// Sıralarla ilgli işlemler
+
+const allSeats = document.querySelectorAll('input[type="checkbox"]');
+
+const seatInfo = new Object();
+
+allSeats.forEach( checkbox => {
+  seatInfo[`${checkbox.id}`] = { status: false, owner: "(boş)" };
+});
+
+allSeats.forEach( checkbox => {
+  checkbox.addEventListener("change", function () {
+    if(checkbox.checked){
+      seatInfo[`${checkbox.id}`].status = true;
+    } else {
+      seatInfo[`${checkbox.id}`].status = false;
+    }
+  });
+});
+// Burayı düzgün yap
+const generateRandomSitting = document.getElementById("create-btn");
+
+generateRandomSitting.addEventListener("click", function () {
+
+  const tempNames = new Array();
+
+  for( let i=0; i<selectedNames.length; i++) {
+    tempNames[i] = selectedNames[i];
+  }
+
+  for( let id in seatInfo ){
+    if( seatInfo[id].status ){
+      const randomIndex = Math.floor(Math.random() * tempNames.length);
+      seatInfo[id].owner = tempNames[randomIndex];
+
+      changeStudentNameText("_" + id, tempNames[randomIndex]);
+
+      tempNames.splice(randomIndex, 1);
+    } else {
+      seatInfo[id].owner = "(boş)"
+      changeStudentNameText("_" + id, "(boş)");
+    }
+  }
+  
+});
+
+const checkboxLabelSpans= document.querySelectorAll(".check-span");
+
+function changeStudentNameText(id, newVal) {
+  checkboxLabelSpans.forEach( span => {
+    if(span.id == id){
+      span.textContent = newVal;
+    }
+  });
+}
+

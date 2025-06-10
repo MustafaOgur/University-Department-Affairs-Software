@@ -75,7 +75,7 @@ body {
 }
 
 .center {
-  flex: 3;
+  flex: 5; /* en son 3 te iyiydi */
   /* background-color: #2e95bd; */
 
   padding-top: 60px;
@@ -120,6 +120,9 @@ body {
   border-right-width: 0px;
   border-left-width: 0px;
   border-bottom-width: 2px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #sitting-name {
@@ -131,7 +134,7 @@ body {
 }
 
 #Title {
-  margin-left: 36px;
+  margin-left: 0px; /* 36px */
   font-size: 25px;
   font-weight: bold;
 }
@@ -149,6 +152,9 @@ body {
   border-right-width: 0px;
   border-left-width: 0px;
   border-bottom-width: 2px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #selection {
@@ -171,7 +177,7 @@ body {
 
 #select-btn {
   margin-left: 30px;
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-top: 10px;
 
   height: 45px;
@@ -207,8 +213,8 @@ body {
 
 .left-side {
   display: flex;
-
   padding: 10px 10px;
+  margin-left: 135px;
 }
 
 .listbox {
@@ -417,7 +423,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: 50px;
+  width: 135px;
+  height: 60px;
+  max-height: 60px;
+  min-width: 80px;
+  max-width: 135px;
+  box-sizing: border-box;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .check-label:hover {
