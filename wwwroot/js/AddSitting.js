@@ -19,8 +19,6 @@ showButton.addEventListener("click", function () {
     });
   }
 
-  console.log(seatStatus);
-
 });
 
 // Rastgele öğrenci isimleri
@@ -222,11 +220,13 @@ generateRandomSitting.addEventListener("click", function () {
       seatInfo[id].owner = tempNames[randomIndex];
 
       changeStudentNameText("_" + id, tempNames[randomIndex]);
+      saveSeatInfo("-" + id, tempNames[randomIndex]);
 
       tempNames.splice(randomIndex, 1);
     } else {
       seatInfo[id].owner = "(boş)"
       changeStudentNameText("_" + id, "(boş)");
+      saveSeatInfo("-" + id, "(boş)");
     }
   }
   
@@ -242,3 +242,20 @@ function changeStudentNameText(id, newVal) {
   });
 }
 
+// Veriyi kaydetmek için
+const hiddenSeatNumber = document.querySelectorAll(".hidden-seat-number");
+const hiddenSeatOwner = document.querySelectorAll(".hidden-seat-owner");
+
+function saveSeatInfo(id, val) {
+  hiddenSeatNumber.forEach( input => {
+    if( input.id == id ){
+      input.value = id.split("-")[1];
+    }
+  });
+
+  hiddenSeatOwner.forEach( input => {
+    if( input.id == id ){
+      input.value = val;
+    }
+  });
+}

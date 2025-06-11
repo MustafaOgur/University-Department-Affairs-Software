@@ -5,16 +5,30 @@
     ViewData["CSS"] = "/css/AddSitting.css";
 }
 
+@{
+    if (!ViewData.ModelState.IsValid)
+    {
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Hata',
+                text: 'Bir Hata Oluştu!',
+            });
+        </script>
+    }
+}
 
 
+<div class="left"></div>
 
-    <div class="left"></div>
+<div class="center">
+    <div class="sitting-box">
 
-    <div class="center">
-        <div class="sitting-box">
+        <form method="post" action="/Sitting/AddSitting">
             <div class="name-bar">
                 <p id="Title">Oturma Planı Adı:</p>
-                <input type="text" id="sitting-name" value="Oturma Programı - 1" />
+                <input type="text" id="sitting-name" name="PlanName" value="Oturma Programı - 1" />
             </div>
 
             <div class="classroom-row">
@@ -58,7 +72,7 @@
 
                 @{  
                     int number = 1; 
-                    @* Dictionary<int, bool> seats = new Dictionary<int, bool>(); *@
+                    int index = 0;
                 }
 
                 @for(int i=1; i<=3; i++){
@@ -68,18 +82,24 @@
                                 <label class="checkbox-container">
                                     <input type="checkbox"  id="@number" />
                                     <div class="check-label"><span class="check-span" id="_@number">[@number]</span></div>
+
+                                    <input type="hidden" name="SeatAssignments[@index].SeatNumber" id="-@number" class="hidden-seat-number" >
+                                    <input type="hidden" name="SeatAssignments[@index].Owner" id="-@number" class="hidden-seat-owner" >
                                     @{  
-                                        @* seats.Add(number, true); *@
-                                        number++; 
+                                        number++;
+                                        index++;
                                     }
                                 </label>
 
                                 <label class="checkbox-container">
                                     <input type="checkbox" id="@number" />
                                     <div class="check-label"><span class="check-span" id="_@number">[@number]</span></div> @* checkbox'lar seçilmesin diye id'nin başına "_" ekledim *@
+                                    
+                                    <input type="hidden" name="SeatAssignments[@index].SeatNumber" id="-@number" class="hidden-seat-number" >
+                                    <input type="hidden" name="SeatAssignments[@index].Owner" id="-@number" class="hidden-seat-owner" >
                                     @{  
-                                        @* seats.Add(number, true);  *@
                                         number++; 
+                                        index++;
                                     }
                                 </label>
                             </div>
@@ -92,13 +112,15 @@
             </div>
 
             <div class="button-bar">
-                <button id="create-btn">Rastgele Oturma Düzeni Oluştur</button>
+                <button type="button" id="create-btn">Rastgele Oturma Düzeni Oluştur</button>
+                <button type="submit" name="action" value="save" id="send-btn">Oturma Düzenini Kaydet</button>
             </div>
-        </div>
-
-        <div class="blank-div"></div>
+        </form>
     </div>
 
-    <div class="right"></div>
+    <div class="blank-div"></div>
+</div>
 
-    <script src="/js/AddSitting.js"></script>
+<div class="right"></div>
+
+<script src="/js/AddSitting.js"></script>

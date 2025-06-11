@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using UDAS.Data;
 using UDAS.Entities;
+using UDAS.ViewModels;
 
 namespace UDAS.Repositories
 {
@@ -23,6 +24,21 @@ namespace UDAS.Repositories
             return await _context.Classrooms.ToListAsync();
         }
 
-        
+        public async Task<string> AddSeatingplanAsync(SeatingPlan seatingPlan)
+        {
+            try
+            {
+                _context.SeatingPlans.Add(seatingPlan);
+                await _context.SaveChangesAsync();
+
+                return null;
+            }
+            catch (Exception e)
+            {
+                return "Bir hata oluştu: " + e;
+            }
+            
+            
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace UDAS.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
+
         }
 
         public DbSet<User> Users { get; set; }
@@ -21,5 +21,7 @@ namespace UDAS.Data
         public DbSet<CourseTime> CourseTimes { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<ExamSchedule> ExamSchedules { get; set; }
+        public DbSet<SeatingPlan> SeatingPlans { get; set; }
+        public DbSet<SeatAssignment> SeatAssignments { get; set; }
     }
 }
