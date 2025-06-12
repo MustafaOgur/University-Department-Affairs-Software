@@ -1,0 +1,54 @@
+@model UDAS.ViewModels.SeatingDisplayViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/DisplaySeatingPlan.css";
+}
+
+<div class="left"></div>
+
+<div class="center">
+    <div class="display-box">
+        @foreach(var plan in Model.SeatingPlans)
+        {   
+
+            int index = 1;
+            <form method="post" action="/Sitting/DisplaySeatingPlan">
+                <div class="seating-plan">
+                    <div class="name-bar">
+                        <p class="title">@plan.PlanName</p>
+                        <button type="submit" id="delete-btn">Sil</button>
+
+                        <input type="hidden" name="planId" value="@plan.Id">
+                    </div>
+                    
+                    <div class="seating-card">
+                        @for(int i = 1; i <= 3; i++)
+                        {
+                            <div class="column">
+                                @for(int j = 1; j <= 6; j++)
+                                {
+                                    <div class="groups">
+                                        @for(int k = 1; k <= 2; k++)
+                                        {
+                                            var seat = plan.SeatAssignments.Where(s => s.SeatNumber == index).FirstOrDefault();
+
+                                            <div class="seat">
+                                                <div class="seat-number"><p>[@seat.SeatNumber]</p></div>
+                                                <div class="seat-owner"><p>@seat.Owner</p></div>
+                                            </div>
+
+                                            index++; 
+                                        }
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            </form>
+        }
+    </div>
+</div>
+
+<div class="right"></div>

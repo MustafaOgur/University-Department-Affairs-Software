@@ -84,6 +84,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rgv16ata4p"},{"Name":"integrity","Value":"sha256-dSzv2wGWKjLtEGGPCOPNU1S\u002B1S7an0JtsaFzN/Pfn\u002Bs="},{"Name":"label","Value":"_content/UDAS/css/DisplaySchedules.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2722"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022dSzv2wGWKjLtEGGPCOPNU1S\u002B1S7an0JtsaFzN/Pfn\u002Bs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 16:30:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySeatingPlan.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Yy6yPKAvKjXog6wQAkHF/q4DyNyPxIhYa4XcKc/Ku28="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3304"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Yy6yPKAvKjXog6wQAkHF/q4DyNyPxIhYa4XcKc/Ku28=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 17:54:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySeatingPlan.t4rx6pshuj.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t4rx6pshuj"},{"Name":"integrity","Value":"sha256-Yy6yPKAvKjXog6wQAkHF/q4DyNyPxIhYa4XcKc/Ku28="},{"Name":"label","Value":"_content/UDAS/css/DisplaySeatingPlan.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3304"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Yy6yPKAvKjXog6wQAkHF/q4DyNyPxIhYa4XcKc/Ku28=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 17:54:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/MainMenu.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

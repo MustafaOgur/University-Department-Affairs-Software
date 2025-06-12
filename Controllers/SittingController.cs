@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Threading.Tasks;
 using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -51,21 +52,44 @@ public class SittingController : Controller
 
                 var errorMessage = await _sittingPlanRepository.AddSeatingplanAsync(seatingPlan);
 
-                    if (errorMessage != null)
+                if (errorMessage != null)
+                {
+                    ModelState.AddModelError("", errorMessage);
+
+                    var classrooms = await _sittingPlanRepository.GetClassroomsAsync();
+                    var viewModel = new SittingAddViewModel
                     {
-                        ModelState.AddModelError("", errorMessage);
+                        Classrooms = classrooms
+                    };
 
-                        var classrooms = await _sittingPlanRepository.GetClassroomsAsync();
-                        var viewModel = new SittingAddViewModel
-                        {
-                            Classrooms = classrooms
-                        };
-
-                        return View(viewModel);
-                    }
-                    break;
+                    return View(viewModel);
+                }
+                break;
         }
-        
+
         return RedirectToAction("AddSitting");
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> DisplaySeatingPlan()
+    {
+        var seatingPlans = await _sittingPlanRepository.GetSeatingPlansAsync();
+
+        var viewModel = new SeatingDisplayViewModel
+        {
+            SeatingPlans = seatingPlans
+        };
+
+        return View(viewModel);
+    }
+    
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> DisplaySeatingPlan(int planId)
+    {
+        await _sittingPlanRepository.DeleteSeatingplanAsync(planId);
+
+        return RedirectToAction("DisplaySeatingPlan");
     }
 }

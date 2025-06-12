@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\DisplaySchedules.css"
     },
     {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySeatingPlan.css",
+      "PackagePath": "staticwebassets\\css\\DisplaySeatingPlan.css"
+    },
+    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\MainMenu.css",
       "PackagePath": "staticwebassets\\css\\MainMenu.css"
     },
