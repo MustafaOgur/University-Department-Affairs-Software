@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mkqzjj6mec</Fingerprint>
-      <Integrity>RnAMzWAfyXJsDTAzBl1sPvfHv9+YtuySAOp7JK8iI6E=</Integrity>
+      <Fingerprint>fzysda9a0e</Fingerprint>
+      <Integrity>5brFE3qXszuhuQ0ZpJaj668GHTS6jgXNH76YWrx98Z8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddSitting.css'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>t4rx6pshuj</Fingerprint>
-      <Integrity>Yy6yPKAvKjXog6wQAkHF/q4DyNyPxIhYa4XcKc/Ku28=</Integrity>
+      <Fingerprint>086pncey36</Fingerprint>
+      <Integrity>QI1emc0J1w6QheQKeJ33SeClglbaPtewTiyXPboVU+g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</OriginalItemSpec>
@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8p9jiwzz6e</Fingerprint>
-      <Integrity>JIYQgpIFgprlx6gzXg7NZaImyKDSC8b+T18mfVrx7Mw=</Integrity>
+      <Fingerprint>0441fw41lh</Fingerprint>
+      <Integrity>8MWmyrj/SxD0h4uzFpSGpqchkRTKfN+IOJWIe+fEqN4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AddSitting.js'))</OriginalItemSpec>

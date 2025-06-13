@@ -2,7 +2,7 @@
 
 @{
     Layout = "_MenuLayout";
-    ViewData["CSS"] = "/css/DisplaySeatingPlan.css";
+    ViewData["CSS"] = "/css/DisplaySeatingPlan.css?v=2";
 }
 
 <div class="left"></div>
@@ -11,8 +11,6 @@
     <div class="display-box">
         @foreach(var plan in Model.SeatingPlans)
         {   
-
-            int index = 1;
             <form method="post" action="/Sitting/DisplaySeatingPlan">
                 <div class="seating-plan">
                     <div class="name-bar">
@@ -22,28 +20,8 @@
                         <input type="hidden" name="planId" value="@plan.Id">
                     </div>
                     
-                    <div class="seating-card">
-                        @for(int i = 1; i <= 3; i++)
-                        {
-                            <div class="column">
-                                @for(int j = 1; j <= 6; j++)
-                                {
-                                    <div class="groups">
-                                        @for(int k = 1; k <= 2; k++)
-                                        {
-                                            var seat = plan.SeatAssignments.Where(s => s.SeatNumber == index).FirstOrDefault();
-
-                                            <div class="seat">
-                                                <div class="seat-number"><p>[@seat.SeatNumber]</p></div>
-                                                <div class="seat-owner"><p>@seat.Owner</p></div>
-                                            </div>
-
-                                            index++; 
-                                        }
-                                    </div>
-                                }
-                            </div>
-                        }
+                    <div class="seating-card" data-plan-id="@plan.Id">
+                        @* Buraya iligli planın partial view'i gelecek *@
                     </div>
                 </div>
             </form>
@@ -52,3 +30,19 @@
 </div>
 
 <div class="right"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.seating-card').each(function () {
+            const container = $(this);
+            const planId = container.data('plan-id');
+
+            $.get('@Url.Action("LoadDisplayPartialView", "Sitting")', { planId: planId }, function (data) {
+                container.html(data);
+            }).fail(function () {
+                container.html('<p>Plan yüklenirken bir hata oluştu.</p>');
+            });
+        });
+    });
+</script>

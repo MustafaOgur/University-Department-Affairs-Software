@@ -27,8 +27,14 @@ namespace UDAS.Repositories
 
         public async Task<List<SeatingPlan>> GetSeatingPlansAsync()
         {
-            return await _context.SeatingPlans.Include(p => p.SeatAssignments).ToListAsync();
+            return await _context.SeatingPlans.Include(sp => sp.SeatAssignments).ThenInclude(sa => sa.Classroom).ToListAsync();
         }
+
+        public async Task<SeatingPlan> GetSeatingPlanByIdAsync(int Id)
+        {
+            return await _context.SeatingPlans.Include(sp => sp.SeatAssignments).ThenInclude(sa => sa.Classroom).Where(sp => sp.Id == Id).FirstOrDefaultAsync();
+        }
+
 
         public async Task<string> AddSeatingplanAsync(SeatingPlan seatingPlan)
         {

@@ -1,0 +1,16 @@
+@model UDAS.Entities.SeatingPlan
+
+@{  
+    string mode = ViewData["Mode"] as string ?? "view"; // default olarak görüntüleme
+}
+
+@if(mode.Equals("view"))
+{
+    <p>Bir hata oluştu!</p>
+}
+else
+{
+    <div style="display: flex; justify-content: center; align-items: center; height: 500px; width: 1100px;">
+        <p style="font-weight: 600; font-size: 150%;">Bu Sınıf İçin Sınav Oturma Düzeni Oluşturulamaz</p>
+    </div>
+}

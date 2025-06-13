@@ -1,0 +1,61 @@
+@model UDAS.Entities.SeatingPlan
+
+@{  
+    string mode = ViewData["Mode"] as string ?? "view"; // default olarak görüntüleme
+}
+
+@if (mode.Equals("view"))
+{   
+    int index = 1;
+    @for(int i = 1; i <= 3; i++)
+    {   
+        <div class="column">
+            @for(int j = 1; j <= 6; j++)
+            {
+                <div class="groups">
+                    @for(int k = 1; k <= 2; k++)
+                    {
+                        var seat = Model.SeatAssignments.Where(s => s.SeatNumber == index).FirstOrDefault();
+
+                        <div class="seat">
+                            <div class="seat-number"><p>[@seat.SeatNumber]</p></div>
+                            <div class="seat-owner"><p>@seat.Owner</p></div>
+                        </div>
+
+                        index++; 
+                    }
+                </div>
+            }
+        </div>
+    }
+}
+else
+{   
+    int number = 1; 
+    int index = 0;
+    @for(int i = 1; i <= 3; i++){
+        <div class="column">
+            @for(int j = 1; j <= 6; j++){
+                <div class="groups">
+                    @for (int k = 1; k <= 2; k++){
+                        <label class="checkbox-container">
+                            <input type="checkbox"  id="@number" />
+                            <div class="check-label"><span class="check-span" id="_@number">[@number]</span></div>
+
+                            <input type="hidden" name="SeatAssignments[@index].SeatNumber" id="-@number" class="hidden-seat-number" >
+                            <input type="hidden" name="SeatAssignments[@index].Owner" id="-@number" class="hidden-seat-owner" >
+                            <input type="hidden" name="SeatAssignments[@index].ClassroomId" id="-@number" class="hidden-seat-classroom-id" >
+                            @{  
+                                number++;
+                                index++;
+                            }
+                        </label>
+                    }
+                    
+                </div>
+            }
+
+        </div>
+    }
+}
+

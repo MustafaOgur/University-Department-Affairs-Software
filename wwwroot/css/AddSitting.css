@@ -345,6 +345,10 @@ body {
   background-color: #ffffff;
 
   height: 500px;
+  width: 1100px;
+
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .button-bar {
@@ -449,7 +453,7 @@ body {
   background-color: #f0f0f0;
   transition: background-color 0.2s ease;
   user-select: none; /* Yazı seçilemesin */
-  margin: 5px 0px;
+  margin: 1px 2px; /* 5 0 */
 
   justify-content: center;
   align-items: center;
@@ -470,9 +474,12 @@ body {
 }
 
 .groups {
-  margin: 0px 10px;
+  margin: 0px 10px; /* 0 10 */
+  /* background-color: #0ABAB5; */
+  display: flex;
 }
 
 .column {
-  margin: 25px 20px;
+  margin: 25px 20px; /* 25 20 */
+  /* background-color: #0c8682; */
 }

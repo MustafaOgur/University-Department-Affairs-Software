@@ -83,7 +83,7 @@ public class SittingController : Controller
 
         return View(viewModel);
     }
-    
+
     [Authorize]
     [HttpPost]
     public async Task<IActionResult> DisplaySeatingPlan(int planId)
@@ -91,5 +91,44 @@ public class SittingController : Controller
         await _sittingPlanRepository.DeleteSeatingplanAsync(planId);
 
         return RedirectToAction("DisplaySeatingPlan");
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> LoadPartialView(int classroomId)
+    {
+        var classrooms = await _sittingPlanRepository.GetClassroomsAsync();
+        var selectedClassroom = classrooms.Where(c => c.Id == classroomId).FirstOrDefault();
+
+        if (selectedClassroom == null)
+        {
+            return Content("Sınıf Bulunamadı");
+        }
+
+        var partialViewName = "_" + selectedClassroom.RoomName.Replace(" ", "") + "ClassroomTemplate";
+        ViewData["Mode"] = "edit";
+
+        SeatingPlan seatingPlan = null;
+
+        return PartialView(partialViewName, seatingPlan);
+    }
+    
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> LoadDisplayPartialView(int planId)
+    {
+        if (planId == null)
+        {
+            return Content("Plan Bulunamadı");
+        }
+
+        var plan = await _sittingPlanRepository.GetSeatingPlanByIdAsync(planId);
+
+        var classroomName = plan.SeatAssignments.FirstOrDefault().Classroom.RoomName;
+        var partialViewName = "_" + classroomName.Replace(" ", "") + "ClassroomTemplate";
+
+        ViewData["Mode"] = "view";
+
+        return PartialView(partialViewName, plan);
     }
 }
