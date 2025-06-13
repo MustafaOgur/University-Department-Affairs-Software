@@ -8,7 +8,6 @@
 @{
     if (!ViewData.ModelState.IsValid)
     {
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             Swal.fire({
                 icon: 'error',
@@ -19,6 +18,7 @@
     }
 }
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <div class="left"></div>
 
@@ -58,12 +58,12 @@
                 <div class="right-side">
                     <div class="normal-size">
                         <p class="bold-text">Normal Kapasite;</p>
-                        <p class="capacity"><span class="student-number"></span> / <span class="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
+                        <p class="capacity"><span class="student-number"></span> / <span id="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
                     </div>
 
                     <div class="exam-size">
                         <p class="bold-text">Sınav Kapasitesi;</p>
-                        <p class="capacity"><span class="student-number"></span> / <span class="real-max-capacity">@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
+                        <p class="capacity"><span class="student-number"></span> / <span id="exam-capacity" >@Model.Classrooms.FirstOrDefault()?.Capacity</span> </p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,6 @@
 
             <div class="button-bar">
                 <button type="button" id="create-btn">Rastgele Oturma Düzeni Oluştur</button>
-                <button type="button" id="deneme-btn">Deneme</button>
                 <button type="submit" name="action" value="save" id="send-btn">Oturma Düzenini Kaydet</button>
             </div>
         </form>
@@ -105,18 +104,15 @@
                     $('.classroom-display').html('<p>Lütfen bir derslik seçin.</p>');
                 }
 
-                const capacityDisplays = document.querySelectorAll(".real-max-capacity");
-                const selectedOption = selectedClassroom.options[selectedClassroom.selectedIndex];
+                const capacityDisplay = document.getElementById("real-max-capacity");
+                const selectedClassroomElement = document.getElementById("classrooms");
+                const selectedOption = selectedClassroomElement.options[selectedClassroomElement.selectedIndex];
                 const capacity = selectedOption.getAttribute("data-capacity");
 
                 if (capacity) {
-                    capacityDisplays.forEach((span) => {
-                        span.textContent = capacity;
-                    });
+                    capacityDisplay.textContent = capacity;
                 } else {
-                    capacityDisplays.forEach((span) => {
-                        span.textContent = "-";
-                    });
+                    capacityDisplay.textContent = "-";
                 }
             });
         });

@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0441fw41lh</Fingerprint>
-      <Integrity>8MWmyrj/SxD0h4uzFpSGpqchkRTKfN+IOJWIe+fEqN4=</Integrity>
+      <Fingerprint>2qa7xaay34</Fingerprint>
+      <Integrity>CnvLIIYilMBHD87s6oWJE5M3CNm16c3FC31uD3BzjCk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AddSitting.js'))</OriginalItemSpec>

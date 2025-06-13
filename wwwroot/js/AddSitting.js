@@ -20,6 +20,23 @@
 
 // });
 
+// Kontroller
+function isValid() {
+  const studentCount = parseInt(studentNumberDisplayers[0].textContent);
+  const classroomCapacity = parseInt(document.getElementById("exam-capacity").textContent);
+
+  if (studentCount > classroomCapacity) {
+    Swal.fire({
+                icon: 'error',
+                title: 'Hata',
+                text: 'Öğrenci sayısı kapasiteyi aştı lütfen öğrenci sayısını düşürün veya sıra sayısını arttırın',
+              });
+    return false;
+  } else {
+    return true;
+  }
+}
+
 // Rastgele öğrenci isimleri
 const studentNumberDisplayers = document.querySelectorAll(".student-number");
 
@@ -202,46 +219,64 @@ const seatInfo = new Object();
 
 window.updateAllSeats = function () {
     const allSeats = document.querySelectorAll('input[type="checkbox"]');
+    const examCapacityDisplay = document.getElementById("exam-capacity");
+
     for (const key in seatInfo) {
         delete seatInfo[key];
     }
+
+    let checkedCount = 0;
 
     allSeats.forEach((checkbox) => {
         seatInfo[checkbox.id] = { status: false, owner: "(boş)" };
 
         checkbox.addEventListener("change", function () {
             seatInfo[checkbox.id].status = checkbox.checked;
+
+            if (checkbox.checked) {
+                checkedCount++;
+            } else {
+                checkedCount--;
+            }
+
+            examCapacityDisplay.textContent = checkedCount;
         });
     });
+
+    examCapacityDisplay.textContent = "0";
 };
 
 
 const generateRandomSitting = document.getElementById("create-btn");
 
 generateRandomSitting.addEventListener("click", function () {
-  const selectElement = document.getElementById("classrooms");
+
+  if (isValid()) {
+    const selectElement = document.getElementById("classrooms");
   
-  const tempNames = new Array();
+    const tempNames = new Array();
 
-  for (let i = 0; i < selectedNames.length; i++) {
-    tempNames[i] = selectedNames[i];
-  }
+    for (let i = 0; i < selectedNames.length; i++) {
+      tempNames[i] = selectedNames[i];
+    }
 
-  for (let id in seatInfo) {
-    if (seatInfo[id].status) {
-      const randomIndex = Math.floor(Math.random() * tempNames.length);
-      seatInfo[id].owner = tempNames[randomIndex];
+    for (let id in seatInfo) {
+      if (seatInfo[id].status && tempNames.length) {
+        const randomIndex = Math.floor(Math.random() * tempNames.length);
+        seatInfo[id].owner = tempNames[randomIndex];
 
-      changeStudentNameText("_" + id, tempNames[randomIndex]);
-      saveSeatInfo("-" + id, tempNames[randomIndex], selectElement.value);
+        changeStudentNameText("_" + id, tempNames[randomIndex]);
+        saveSeatInfo("-" + id, tempNames[randomIndex], selectElement.value);
 
-      tempNames.splice(randomIndex, 1);
-    } else {
-      seatInfo[id].owner = "(boş)";
-      changeStudentNameText("_" + id, "(boş)");
-      saveSeatInfo("-" + id, "(boş)", selectElement.value);
+        tempNames.splice(randomIndex, 1);
+      } else {
+        seatInfo[id].owner = "(boş)";
+        changeStudentNameText("_" + id, "(boş)");
+        saveSeatInfo("-" + id, "(boş)", selectElement.value);
+      }
     }
   }
+
 });
 
 function changeStudentNameText(id, newVal) {
@@ -282,14 +317,14 @@ function saveSeatInfo(id, val, classroomId) {
   });
 }
 
-const deneme = document.getElementById("deneme-btn");
+// const deneme = document.getElementById("deneme-btn");
 
-deneme.addEventListener("click", function () {
-  const hiddenSeatNumber = document.querySelectorAll(".hidden-seat-number");
-  const hiddenSeatOwner = document.querySelectorAll(".hidden-seat-owner");
-  const hiddenSeatClassroomId = document.querySelectorAll(".hidden-seat-classroom-id");
+// deneme.addEventListener("click", function () {
+//   const hiddenSeatNumber = document.querySelectorAll(".hidden-seat-number");
+//   const hiddenSeatOwner = document.querySelectorAll(".hidden-seat-owner");
+//   const hiddenSeatClassroomId = document.querySelectorAll(".hidden-seat-classroom-id");
 
-  hiddenSeatNumber.forEach(input => console.log(input));
-  hiddenSeatOwner.forEach(input => console.log(input));
-  hiddenSeatClassroomId.forEach(input => console.log(input));
-});
+//   hiddenSeatNumber.forEach(input => console.log(input));
+//   hiddenSeatOwner.forEach(input => console.log(input));
+//   hiddenSeatClassroomId.forEach(input => console.log(input));
+// });
