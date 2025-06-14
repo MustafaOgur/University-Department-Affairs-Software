@@ -9,19 +9,22 @@ namespace UDAS.Entities
 {
     public class ExamSchedule
     {
-        public int Id { get; set; } 
-        
-        public string? Date { get; set; } 
-        public string? StartTime { get; set; } 
-        public string? EndTime { get; set; } 
+        public int Id { get; set; }
 
-        public int? CourseId { get; set; } 
-        public Course? Course { get; set; } 
+        public string? Date { get; set; }
+        public string? StartTime { get; set; }
+        public string? EndTime { get; set; }
 
-        public int? ClassroomId { get; set; } 
-        public Classroom? Classroom { get; set; } 
+        public int? CourseId { get; set; }
+        public Course? Course { get; set; }
 
-        public int? SupervisorId { get; set; } 
+        public int? ClassroomId { get; set; }
+        public Classroom? Classroom { get; set; }
+
+        public int? SupervisorId { get; set; }
         public User? Supervisor { get; set; } 
+
+        public int? SeatingPlanId { get; set; } 
+        public SeatingPlan? SeatingPlan { get; set; } 
     }
 }

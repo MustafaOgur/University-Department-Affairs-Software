@@ -2,7 +2,7 @@
 
 @{
     Layout = "_MenuLayout";
-    ViewData["CSS"] = "/css/DisplayExam.css"; 
+    ViewData["CSS"] = "/css/DisplayExam.css?v=2"; 
 }
   
     <div class="left"></div>
@@ -11,11 +11,12 @@
         <div class="table-div">
           <table class="schedule">
             <colgroup>
+              <col style="width: 13%" />  @* 20 *@ 
+              <col style="width: 14%" />  @* 14 *@
+              <col style="width: 25%" />  @* 40 *@
+              <col style="width: 16%" />  @* 12 *@
+              <col style="width: 12%" />  @* 12 *@
               <col style="width: 20%" />
-              <col style="width: 14%" />
-              <col style="width: 40%" />
-              <col style="width: 12%" />
-              <col style="width: 12%" />
             </colgroup>
 
             <thead>
@@ -25,6 +26,7 @@
                 <th>DERS ADI</th>
                 <th>GÖZETMEN</th>
                 <th>DERSLİK</th>
+                <th>OTURMA PLANI</th>
               </tr>
             </thead>
 
@@ -37,6 +39,7 @@
                   <td>@examSchedule.Course?.CourseName</td>
                   <td>@examSchedule.Supervisor?.Name @examSchedule.Supervisor?.Surname</td>
                   <td>@examSchedule.Classroom?.RoomName</td>
+                  <td>@examSchedule.SeatingPlan?.PlanName</td>
                 </tr>
               }
 

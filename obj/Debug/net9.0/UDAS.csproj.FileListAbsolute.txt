@@ -1069,8 +1069,9 @@ C:\Users\Outlier\Desktop\University-Department-Affairs-Software\obj\Debug\net9.0
 C:\Users\Outlier\Desktop\University-Department-Affairs-Software\obj\Debug\net9.0\ref\UDAS.dll
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\4n00pywn7m-k2rgwz9ntz.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ubkpw135cj-ay2qnppya9.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jgqz4ak8dv-9w411cv93i.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\hg51exox8x-nzwf4qdt3o.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ty0em7u42g-fzysda9a0e.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\939h8f7buu-086pncey36.gz
-C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\7sazcb3vdx-2qa7xaay34.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ty0em7u42g-zlbo6lsc5r.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\7sazcb3vdx-092qw6aflj.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jgqz4ak8dv-twj13tahhb.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\939h8f7buu-r5dyduy8h4.gz
+C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\hecy85cb0c-zb2wnzcnlx.gz
