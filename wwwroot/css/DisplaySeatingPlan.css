@@ -140,6 +140,37 @@ body {
   transform: scale(0.98); /* Hafif küçülme efekti */
 }
 
+.save-as-pdf-btn {
+  margin-left: 30px; /* 30px */
+  margin-right: 550px;
+  margin-top: 7px; /* 10px */
+
+  height: 40px; /* 45px */
+  width: 160px;
+
+  font-size: 115%;
+  color: #efefef;
+  font-family: "Calibri", Times, serif;
+
+  background: none;
+  /* padding: 10px 40px; */
+  border: none;
+  cursor: pointer;
+
+  background-color: #0ABAB5; /* eski #578FCA */
+  border-radius: 10px;
+}
+
+.save-as-pdf-btn:hover {
+  background-color: #0ca19c(5, 154, 184);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover'da gölge artır */
+}
+
+.save-as-pdf-btn:active {
+  background-color: #0c8682; /* Basılıyken daha koyu */
+  transform: scale(0.98); /* Hafif küçülme efekti */
+}
+
 .title {
   margin-top: 12px;
   margin-left: 36px;

@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\js\\AddSitting.js"
     },
     {
+      "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js",
+      "PackagePath": "staticwebassets\\js\\DisplaySeatingPlan.js"
+    },
+    {
       "Id": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

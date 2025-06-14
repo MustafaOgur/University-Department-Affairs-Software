@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AKjFk8sbo039bDiVL4FewG6TjItRYnfVS2XQRMAM9Q0=",
+  "Hash": "tIQE10IZUUXA6D5cqyVSfRuCj7rCNrcVGkYzAxR6MgI=",
   "Source": "UDAS",
   "BasePath": "_content/UDAS",
   "Mode": "Default",
@@ -479,12 +479,12 @@
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-hyfai57waj.gz",
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-r5dyduy8h4.gz",
       "SourceId": "UDAS",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UDAS",
-      "RelativePath": "css/DisplaySeatingPlan#[.{fingerprint=hyfai57waj}]?.css.gz",
+      "RelativePath": "css/DisplaySeatingPlan#[.{fingerprint=r5dyduy8h4}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -493,8 +493,8 @@
       "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySeatingPlan.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "j7xexsjntl",
-      "Integrity": "n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A=",
+      "Fingerprint": "5y3yi0i7a2",
+      "Integrity": "g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySeatingPlan.css"
@@ -876,6 +876,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hecy85cb0c-zb2wnzcnlx.gz",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "js/DisplaySeatingPlan#[.{fingerprint=zb2wnzcnlx}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zjyrnhigmk",
+      "Integrity": "UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js"
     },
     {
       "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hg51exox8x-nzwf4qdt3o.gz",
@@ -1795,8 +1816,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hyfai57waj",
-      "Integrity": "SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=",
+      "Fingerprint": "r5dyduy8h4",
+      "Integrity": "H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\DisplaySeatingPlan.css"
@@ -1968,6 +1989,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\AddSitting.js"
+    },
+    {
+      "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js",
+      "SourceId": "UDAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\",
+      "BasePath": "_content/UDAS",
+      "RelativePath": "js/DisplaySeatingPlan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zb2wnzcnlx",
+      "Integrity": "McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DisplaySeatingPlan.js"
     },
     {
       "Identity": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\site.js",
@@ -5340,12 +5382,12 @@
     },
     {
       "Route": "css/DisplaySeatingPlan.css",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-hyfai57waj.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-r5dyduy8h4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000965250965"
+          "Quality": "0.000913242009"
         }
       ],
       "ResponseHeaders": [
@@ -5355,15 +5397,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1035"
+          "Value": "1094"
         },
         {
           "Name": "ETag",
-          "Value": "\"n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A=\""
+          "Value": "\"g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5383,13 +5425,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\""
+          "Value": "W/\"H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="
+          "Value": "sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="
         }
       ]
     },
@@ -5404,7 +5446,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3164"
+          "Value": "3838"
         },
         {
           "Name": "Content-Type",
@@ -5412,11 +5454,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\""
+          "Value": "\"H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5426,13 +5468,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="
+          "Value": "sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="
         }
       ]
     },
     {
       "Route": "css/DisplaySeatingPlan.css.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-hyfai57waj.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-r5dyduy8h4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5441,7 +5483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1035"
+          "Value": "1094"
         },
         {
           "Name": "Content-Type",
@@ -5449,11 +5491,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A=\""
+          "Value": "\"g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5471,18 +5513,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A="
+          "Value": "sha256-g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A="
         }
       ]
     },
     {
-      "Route": "css/DisplaySeatingPlan.hyfai57waj.css",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-hyfai57waj.gz",
+      "Route": "css/DisplaySeatingPlan.r5dyduy8h4.css",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-r5dyduy8h4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000965250965"
+          "Quality": "0.000913242009"
         }
       ],
       "ResponseHeaders": [
@@ -5492,15 +5534,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1035"
+          "Value": "1094"
         },
         {
           "Name": "ETag",
-          "Value": "\"n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A=\""
+          "Value": "\"g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5520,13 +5562,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\""
+          "Value": "W/\"H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hyfai57waj"
+          "Value": "r5dyduy8h4"
         },
         {
           "Name": "label",
@@ -5534,12 +5576,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="
+          "Value": "sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="
         }
       ]
     },
     {
-      "Route": "css/DisplaySeatingPlan.hyfai57waj.css",
+      "Route": "css/DisplaySeatingPlan.r5dyduy8h4.css",
       "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\css\\DisplaySeatingPlan.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5549,7 +5591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3164"
+          "Value": "3838"
         },
         {
           "Name": "Content-Type",
@@ -5557,11 +5599,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\""
+          "Value": "\"H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5571,7 +5613,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hyfai57waj"
+          "Value": "r5dyduy8h4"
         },
         {
           "Name": "label",
@@ -5579,13 +5621,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="
+          "Value": "sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="
         }
       ]
     },
     {
-      "Route": "css/DisplaySeatingPlan.hyfai57waj.css.gz",
-      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-hyfai57waj.gz",
+      "Route": "css/DisplaySeatingPlan.r5dyduy8h4.css.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\939h8f7buu-r5dyduy8h4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5594,7 +5636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1035"
+          "Value": "1094"
         },
         {
           "Name": "Content-Type",
@@ -5602,11 +5644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A=\""
+          "Value": "\"g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 07:26:44 GMT"
+          "Value": "Sat, 14 Jun 2025 10:54:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5624,7 +5666,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hyfai57waj"
+          "Value": "r5dyduy8h4"
         },
         {
           "Name": "label",
@@ -5632,7 +5674,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-n0AZ/inULQhggWUGPZqjiKaCcmqICebh1lQwCbg5S3A="
+          "Value": "sha256-g4V1BcKpeUbc7twjF+lPbiGjLP3PJP8R2bkVgwOcL7A="
         }
       ]
     },
@@ -7369,6 +7411,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-tbHLEY4DpZqWfMFI5PtpSmlAzFcj4tsXaSJ9SWoGpcg="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.js",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hecy85cb0c-zb2wnzcnlx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002427184466"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.js",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.js.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hecy85cb0c-zb2wnzcnlx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.zb2wnzcnlx.js",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hecy85cb0c-zb2wnzcnlx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002427184466"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zb2wnzcnlx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DisplaySeatingPlan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.zb2wnzcnlx.js",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\wwwroot\\js\\DisplaySeatingPlan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zb2wnzcnlx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DisplaySeatingPlan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx+7xkt2ymZ4="
+        }
+      ]
+    },
+    {
+      "Route": "js/DisplaySeatingPlan.zb2wnzcnlx.js.gz",
+      "AssetFile": "C:\\Users\\Volkan\\Desktop\\Dosyalar\\Visual Studio\\VS Code\\C#\\University-Department-Affairs-Software\\obj\\Debug\\net9.0\\compressed\\hecy85cb0c-zb2wnzcnlx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 11:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zb2wnzcnlx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DisplaySeatingPlan.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UZ2Q8JHT/SeadwHChUOyhVFkg2lQhF77SgnD153ue4Q="
         }
       ]
     },

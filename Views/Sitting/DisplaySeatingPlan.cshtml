@@ -2,7 +2,7 @@
 
 @{
     Layout = "_MenuLayout";
-    ViewData["CSS"] = "/css/DisplaySeatingPlan.css?v=2";
+    ViewData["CSS"] = "/css/DisplaySeatingPlan.css?v=4";
 }
 
 <div class="left"></div>
@@ -16,6 +16,7 @@
                     <div class="name-bar">
                         <p class="title">@plan.PlanName</p>
                         <button type="submit" id="delete-btn">Sil</button>
+                        <button type="button" class="save-as-pdf-btn" id="@plan.Id">PDF Olarak Kaydet</button>
 
                         <input type="hidden" name="planId" value="@plan.Id">
                     </div>
@@ -30,6 +31,48 @@
 </div>
 
 <div class="right"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    const saveButtons = document.querySelectorAll(".save-as-pdf-btn");
+
+    saveButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const elements = document.querySelectorAll('.seating-card');
+            let selectedElement;
+
+            elements.forEach( element => {
+                if (element.dataset.planId == button.id) {
+                    selectedElement = element;
+                }
+            });
+
+            const originalOverflow = selectedElement.style.overflow;
+            const originalMaxHeight = selectedElement.style.maxHeight;
+
+            selectedElement.style.overflow = 'visible';
+            selectedElement.style.maxHeight = 'none';
+
+            const opt = {
+                margin:       0.1,
+                filename:     'oturma-plani.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: [20, 10], orientation: 'landscape' },
+                pagebreak:  { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+
+            html2pdf().set(opt).from(selectedElement).save().then(() => {
+                // Eski stil geri getir
+                selectedElement.style.overflow = originalOverflow;
+                selectedElement.style.maxHeight = originalMaxHeight;
+            });
+        });
+    });
+
+    
+</script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

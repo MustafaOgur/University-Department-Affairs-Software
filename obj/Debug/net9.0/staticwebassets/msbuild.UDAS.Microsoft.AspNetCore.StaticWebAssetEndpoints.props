@@ -87,14 +87,14 @@
     <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySeatingPlan.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3164"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 07:26:44 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3838"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 10:54:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySeatingPlan.hyfai57waj.css">
+    <StaticWebAssetEndpoint Include="_content/UDAS/css/DisplaySeatingPlan.r5dyduy8h4.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hyfai57waj"},{"Name":"integrity","Value":"sha256-SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI="},{"Name":"label","Value":"_content/UDAS/css/DisplaySeatingPlan.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3164"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 07:26:44 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r5dyduy8h4"},{"Name":"integrity","Value":"sha256-H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA="},{"Name":"label","Value":"_content/UDAS/css/DisplaySeatingPlan.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3838"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H/ynyD89fJghDwiGYbd9/tzEoY/ruJZDHIa7ulOO2mA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 10:54:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/css/MainMenu.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MainMenu.css'))</AssetFile>
@@ -191,6 +191,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5OVTQMI9X/IZO5i\u002B/3vPfgte8PEwcB/ecRbGsUMAccc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8224"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00225OVTQMI9X/IZO5i\u002B/3vPfgte8PEwcB/ecRbGsUMAccc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 07:26:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/js/DisplaySeatingPlan.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\DisplaySeatingPlan.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx\u002B7xkt2ymZ4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"766"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx\u002B7xkt2ymZ4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 11:03:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UDAS/js/DisplaySeatingPlan.zb2wnzcnlx.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\DisplaySeatingPlan.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zb2wnzcnlx"},{"Name":"integrity","Value":"sha256-McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx\u002B7xkt2ymZ4="},{"Name":"label","Value":"_content/UDAS/js/DisplaySeatingPlan.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"766"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022McmhPcpeBoLTUrfxR2NvVhVDiRPoWs2Wx\u002B7xkt2ymZ4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 11:03:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UDAS/js/site.8x53ba2fvz.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
