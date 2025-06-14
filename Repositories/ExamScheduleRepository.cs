@@ -46,16 +46,37 @@ namespace UDAS.Repositories
             .Include(s => s.Classroom)
             .Include(s => s.Supervisor)
             .Include(s => s.SeatingPlan)
+            .ThenInclude(s => s.SeatAssignments)
             .ToListAsync();
         }
 
         public bool IsAvailable(ExamSchedule examSchedule)
         {   
-            bool conflictExists = _context.ExamSchedules
+            // Aynı anda bir sınıfta 2 tane sınav olamaz
+            bool conflictExists1 = _context.ExamSchedules
             .Where(s => s.ClassroomId == examSchedule.ClassroomId &&
                         s.Date == examSchedule.Date &&
                         s.StartTime == examSchedule.StartTime)
             .Any();
+
+            // Bir gözetmen aynı anda 2 sınavda bulunamaz
+            bool conflictExists2 = _context.ExamSchedules
+            .Where(s => s.SupervisorId == examSchedule.SupervisorId &&
+                        s.Date == examSchedule.Date &&
+                        s.StartTime == examSchedule.StartTime)
+            .Any();
+
+            // Bir dersten birden fazla sınav olamaz
+            bool conflictExists3 = _context.ExamSchedules
+            .Where(s => s.CourseId == examSchedule.CourseId)
+            .Any();
+            
+            // Seçilen Sınıf Oturma Planıyla eşleşiyor mu?
+            var seatingPlan = _context.SeatingPlans.Include(s => s.SeatAssignments).FirstOrDefault(s => s.Id == examSchedule.SeatingPlanId);
+            bool conflictExists4 = !seatingPlan.SeatAssignments.All(s => s.ClassroomId == examSchedule.ClassroomId);
+            
+
+            bool conflictExists = conflictExists1 || conflictExists2 || conflictExists3 || conflictExists4;
 
             return !conflictExists;
         }
