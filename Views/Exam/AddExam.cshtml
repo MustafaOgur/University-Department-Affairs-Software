@@ -2,7 +2,7 @@
 
 @{
     Layout = "_MenuLayout";
-    ViewData["CSS"] = "/css/AddExam.css"; 
+    ViewData["CSS"] = "/css/AddExam.css?v=2"; 
 }
 
 @{
@@ -83,6 +83,17 @@
                 
                 @foreach(var supervisor in Model.Supervisors){
                   <option value="@supervisor.Id">@supervisor.Name @supervisor.Surname</option>
+                }
+
+              </select>
+            </div>
+
+            <div class="seating-plan">
+              <p>Oturma Düzeni:</p>
+              <select name="SeatingPlanId" id="SeatingPlans">
+                
+                @foreach(var seatingPlan in Model.SeatingPlans){
+                  <option value="@seatingPlan.Id">@seatingPlan.PlanName</option>
                 }
 
               </select>

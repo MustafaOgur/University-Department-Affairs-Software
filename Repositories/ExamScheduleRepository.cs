@@ -34,12 +34,18 @@ namespace UDAS.Repositories
         public async Task<List<CourseTime>> GetCourseTimesAsync(){
             return await _context.CourseTimes.ToListAsync();
         }
+        
+        public async Task<List<SeatingPlan>> GetSeatingPlansAsync(){
+            return await _context.SeatingPlans.ToListAsync();
+        }
 
-        public async Task<List<ExamSchedule>> GetExamSchedulesAsync(){
+        public async Task<List<ExamSchedule>> GetExamSchedulesAsync()
+        {
             return await _context.ExamSchedules
             .Include(s => s.Course)
             .Include(s => s.Classroom)
             .Include(s => s.Supervisor)
+            .Include(s => s.SeatingPlan)
             .ToListAsync();
         }
 

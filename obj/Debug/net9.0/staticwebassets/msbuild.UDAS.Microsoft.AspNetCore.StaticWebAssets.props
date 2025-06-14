@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9w411cv93i</Fingerprint>
-      <Integrity>CVDYCjl2TPIsEle3nBMbS4JHsHF/cMCOvrn0p7CCkZE=</Integrity>
+      <Fingerprint>twj13tahhb</Fingerprint>
+      <Integrity>DXLovYzdit5BpCW1F3MG0aGSJ70KT5cTCJKm+cHJ7IY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddExam.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fzysda9a0e</Fingerprint>
-      <Integrity>5brFE3qXszuhuQ0ZpJaj668GHTS6jgXNH76YWrx98Z8=</Integrity>
+      <Fingerprint>zlbo6lsc5r</Fingerprint>
+      <Integrity>x0qMIzaFGhR6iTpYmeGlsUaEZ40j6Vu9aVp25tmwaqc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AddSitting.css'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>086pncey36</Fingerprint>
-      <Integrity>QI1emc0J1w6QheQKeJ33SeClglbaPtewTiyXPboVU+g=</Integrity>
+      <Fingerprint>hyfai57waj</Fingerprint>
+      <Integrity>SWUBIDkFIokPYGQClBRUrnBUzJHH94BseFyecV2xHkI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DisplaySeatingPlan.css'))</OriginalItemSpec>
@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2qa7xaay34</Fingerprint>
-      <Integrity>CnvLIIYilMBHD87s6oWJE5M3CNm16c3FC31uD3BzjCk=</Integrity>
+      <Fingerprint>092qw6aflj</Fingerprint>
+      <Integrity>5OVTQMI9X/IZO5i+/3vPfgte8PEwcB/ecRbGsUMAccc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AddSitting.js'))</OriginalItemSpec>

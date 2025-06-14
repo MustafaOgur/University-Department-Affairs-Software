@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace UDAS.Entities;
+
 public class SeatingPlan
 {
     public int Id { get; set; }
@@ -13,4 +14,5 @@ public class SeatingPlan
 
     // Navigation Property
     public ICollection<SeatAssignment> SeatAssignments { get; set; }
+    public ICollection<ExamSchedule> ExamSchedules { get; set; }
 }

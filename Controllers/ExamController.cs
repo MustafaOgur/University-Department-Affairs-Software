@@ -36,12 +36,15 @@ public class ExamController : Controller
         var courses = await _examScheduleRepository.GetCoursesAsync();
         var classrooms = await _examScheduleRepository.GetClassroomsAsync();
         var supervisors = await _examScheduleRepository.GetUsersAsync();
+        var seatingPlans = await _examScheduleRepository.GetSeatingPlansAsync();
 
-        var viewModel = new ExamAddViewModel{
+        var viewModel = new ExamAddViewModel
+        {
             CourseTimes = courseTimes,
             Courses = courses,
             Classrooms = classrooms,
-            Supervisors = supervisors
+            Supervisors = supervisors,
+            SeatingPlans = seatingPlans
         };
 
         return View(viewModel);
