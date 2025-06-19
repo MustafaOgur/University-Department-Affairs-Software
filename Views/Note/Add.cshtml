@@ -1,0 +1,95 @@
+@model UDAS.ViewModels.NoteViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["Title"] = "Not Ekle";
+    ViewData["CSS"] = "/css/MainMenu.css";
+}
+
+<style>
+    .note-form-container {
+        width: 700px;
+        margin: 60px auto;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .note-form-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+    }
+
+    .note-form-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .note-form-container p {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f4f6f8;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    .note-form-container select,
+    .note-form-container textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 25px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .note-form-container button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .note-form-container button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="note-form-container">
+    <h2>Not Ekle</h2>
+
+    <form asp-action="Add" method="post">
+        <input type="hidden" asp-for="UserId" />
+        <input type="hidden" asp-for="Name" />
+        <input type="hidden" asp-for="Surname" />
+
+
+        <div>
+            <label>Not Türü</label>
+            <select asp-for="NoteType" required>
+                <option value="">-- Seçin --</option>
+                <option value="Sınav">Sınav</option>
+                <option value="Ders Programı">Ders Programı</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Not</label>
+            <textarea asp-for="Content" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>
+

@@ -19,23 +19,28 @@ namespace UDAS.Repositories
             _context = context;
         }
 
-        public async Task<List<Course>> GetCoursesAsync(){
+        public async Task<List<Course>> GetCoursesAsync()
+        {
             return await _context.Courses.ToListAsync();
         }
 
-        public async Task<List<Classroom>> GetClassroomsAsync(){
+        public async Task<List<Classroom>> GetClassroomsAsync()
+        {
             return await _context.Classrooms.ToListAsync();
         }
 
-        public async Task<List<User>> GetUsersAsync(){
+        public async Task<List<User>> GetUsersAsync()
+        {
             return await _context.Users.ToListAsync();
         }
 
-        public async Task<List<CourseTime>> GetCourseTimesAsync(){
+        public async Task<List<CourseTime>> GetCourseTimesAsync()
+        {
             return await _context.CourseTimes.ToListAsync();
         }
-        
-        public async Task<List<SeatingPlan>> GetSeatingPlansAsync(){
+
+        public async Task<List<SeatingPlan>> GetSeatingPlansAsync()
+        {
             return await _context.SeatingPlans.ToListAsync();
         }
 
@@ -51,7 +56,7 @@ namespace UDAS.Repositories
         }
 
         public bool IsAvailable(ExamSchedule examSchedule)
-        {   
+        {
             // Aynı anda bir sınıfta 2 tane sınav olamaz
             bool conflictExists1 = _context.ExamSchedules
             .Where(s => s.ClassroomId == examSchedule.ClassroomId &&
@@ -70,11 +75,11 @@ namespace UDAS.Repositories
             bool conflictExists3 = _context.ExamSchedules
             .Where(s => s.CourseId == examSchedule.CourseId)
             .Any();
-            
+
             // Seçilen Sınıf Oturma Planıyla eşleşiyor mu?
             var seatingPlan = _context.SeatingPlans.Include(s => s.SeatAssignments).FirstOrDefault(s => s.Id == examSchedule.SeatingPlanId);
             bool conflictExists4 = !seatingPlan.SeatAssignments.All(s => s.ClassroomId == examSchedule.ClassroomId);
-            
+
 
             bool conflictExists = conflictExists1 || conflictExists2 || conflictExists3 || conflictExists4;
 
@@ -82,7 +87,7 @@ namespace UDAS.Repositories
         }
 
         public async Task<string> AddExamScheduleAsync(ExamSchedule examSchedule)
-        {   
+        {
             if (IsAvailable(examSchedule))
             {
                 _context.Add(examSchedule);
@@ -100,11 +105,34 @@ namespace UDAS.Repositories
         {
             var examSchedules = await _context.ExamSchedules.ToListAsync();
 
-            if(examSchedules.Any()) {
+            if (examSchedules.Any())
+            {
 
                 _context.RemoveRange(examSchedules);
                 await _context.SaveChangesAsync();
             }
+        }
+        
+
+        public async Task<List<ExamSchedule>> GetExamSchedulesByLecturerIdAsync(int lecturerId)
+        {
+            // Öğretim elemanının verdiği derslerin Id'leri
+            var lecturerCourseIds = await _context.Schedules
+                .Where(s => s.LecturerId == lecturerId && s.CourseId != null)
+                .Select(s => s.CourseId.Value)
+                .Distinct()
+                .ToListAsync();
+
+            // Bu derslerin sınavlarını getir
+            var examSchedules = await _context.ExamSchedules
+                .Include(es => es.Course)
+                .Include(es => es.Classroom)
+                .Include(es => es.SeatingPlan)
+                .Include(es => es.Supervisor)
+                .Where(es => es.CourseId != null && lecturerCourseIds.Contains(es.CourseId.Value))
+                .ToListAsync();
+
+            return examSchedules;
         }
     }
 }

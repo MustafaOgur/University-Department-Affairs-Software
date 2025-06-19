@@ -7,6 +7,7 @@
 
     var lecturerName = User.FindFirst(ClaimTypes.Name)?.Value;
     var lecturerSurname = User.FindFirst(ClaimTypes.Surname)?.Value;
+    var roleId = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
 
     // Zaman dilimlerini DateTime üzerinden kıyaslayabilmek için güncelledik
     var timeSlots = new List<(TimeSpan Start, TimeSpan End)>
@@ -73,6 +74,27 @@
         </table>
         <button onclick="printSchedule()"" class="print-btn">🖨 Yazdır</button>
     </div>
+
+    @if (Model.Notes != null && Model.Notes.Any() && roleId == "1")
+    {
+        <div class="notes-section" style="max-width: 800px; margin: 40px auto;">
+            <h3 style="text-align:center; color:#2c3e50;">Ders Programı Notlarınız</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                @foreach (var note in Model.Notes)
+                {
+                    <li style="background-color: #f8f8f8; border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div>
+                                <strong>@note.CreatedAt.ToString("dd.MM.yyyy HH:mm")</strong>
+                                <p>@note.Content</p>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
 </div>
 
 <div class="right"></div>

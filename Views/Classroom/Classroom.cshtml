@@ -45,7 +45,7 @@
                 </div>
                 
                 <div class="bottom">
-                  <div class="cols"><p>100</p></div>
+                  <div class="cols"><p>@Model.Classroom.Capacity</p></div>
                   <div class="cols">
                     @foreach(var lecturer in Model.Lecturers){
                       <p>@lecturer.Name @lecturer.Surname</p>

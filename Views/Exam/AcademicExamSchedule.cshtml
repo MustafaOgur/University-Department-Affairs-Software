@@ -1,0 +1,61 @@
+@using System.Security.Claims
+@model UDAS.ViewModels.ExamDisplayViewModel
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/DisplayExam.css?v=3";
+    var roleId = User.FindFirst(ClaimTypes.Role)?.Value;
+}
+
+<div class="center">
+    <h2 style="text-align:center">Sorumlu Olduğunuz Sınavlar</h2>
+
+    <div class="table-div">
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>TARİH</th>
+                    <th>SAAT</th>
+                    <th>DERS</th>
+                    <th>GÖZETMEN</th>
+                    <th>DERSLİK</th>
+                    <th>OTURMA PLANI</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var exam in Model.ExamSchedules)
+                {
+                    <tr>
+                        <td class="dates">@exam.Date</td>
+                        <td>@exam.StartTime - @exam.EndTime</td>
+                        <td>@exam.Course?.CourseName</td>
+                        <td>@exam.Supervisor?.Name @exam.Supervisor?.Surname</td>
+                        <td>@exam.Classroom?.RoomName</td>
+                        <td>@exam.SeatingPlan?.PlanName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+     @if (Model.ExamNotes != null && Model.ExamNotes.Any() && roleId == "1")
+    {
+        <div class="notes-section" style="max-width: 800px; margin: 40px auto;">
+            <h3 style="text-align:center; color:#2c3e50;">Sınav Programı Notlarınız</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                @foreach (var note in Model.ExamNotes)
+                {
+                    <li style="background-color: #f8f8f8; border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div>
+                                <strong>@note.CreatedAt.ToString("dd.MM.yyyy HH:mm")</strong>
+                                <p>@note.Content</p>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
+</div>

@@ -15,10 +15,12 @@ namespace UDAS.Controllers;
 public class SittingController : Controller
 {
     private readonly SittingPlanRepository _sittingPlanRepository;
+    private readonly ExamScheduleRepository _examScheduleRepository;
 
-    public SittingController(SittingPlanRepository sittingPlanRepository)
+    public SittingController(SittingPlanRepository sittingPlanRepository, ExamScheduleRepository examScheduleRepository)
     {
         _sittingPlanRepository = sittingPlanRepository;
+        _examScheduleRepository = examScheduleRepository;
     }
 
     [Authorize]
@@ -112,7 +114,7 @@ public class SittingController : Controller
 
         return PartialView(partialViewName, seatingPlan);
     }
-    
+
     [Authorize]
     [HttpGet]
     public async Task<IActionResult> LoadDisplayPartialView(int planId)
@@ -130,5 +132,33 @@ public class SittingController : Controller
         ViewData["Mode"] = "view";
 
         return PartialView(partialViewName, plan);
+    }
+    
+
+    [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> InstructorSeatingPlans()
+    {
+        var userIdString = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+        if (!int.TryParse(userIdString, out int lecturerId))
+        {
+            return Unauthorized();
+        }
+
+        var examSchedules = await _examScheduleRepository.GetExamSchedulesByLecturerIdAsync(lecturerId);
+
+        var seatingPlans = examSchedules
+            .Where(es => es.SeatingPlan != null)
+            .Select(es => es.SeatingPlan)
+            .Distinct()
+            .ToList();
+
+        var viewModel = new SeatingDisplayViewModel
+        {
+            SeatingPlans = seatingPlans
+        };
+
+        return View(viewModel);
     }
 }

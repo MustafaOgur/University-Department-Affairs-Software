@@ -15,7 +15,7 @@ using UDAS.ViewModels;
 namespace UDAS.Controllers
 {
     [Authorize]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class InstructorScheduleController : Controller
     {
         private readonly ILogger<InstructorScheduleController> _logger;
@@ -33,10 +33,8 @@ namespace UDAS.Controllers
 
         [HttpGet]
         [Authorize]
-        [Route("Index")]
         public async Task<IActionResult> Index(int? lecturerId)
         {
-
             if (lecturerId == null)
             {
                 var lecturerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
@@ -47,32 +45,36 @@ namespace UDAS.Controllers
                 lecturerId = idFromClaim;
             }
 
-
             var schedules = await _courseScheduleRepository.GetInstructorSchedulesAsync(lecturerId.Value);
-            
-            
 
             var groupped = schedules
-            .Where(s => s.Course != null)
-            .GroupBy(s => s.Course!.Year)
-            .Select(g => new YearlyScheduleGroup{
-                Year = g.Key,
-                Schedules = g.ToList()
-            })
-            .ToList();
+                .Where(s => s.Course != null)
+                .GroupBy(s => s.Course!.Year)
+                .Select(g => new YearlyScheduleGroup
+                {
+                    Year = g.Key,
+                    Schedules = g.ToList()
+                })
+                .ToList();
 
-            var viewModel = new ScheduleDisplayViewModel{
+            // Ders Programı Notlarını al
+            var notes = await _context.Notes
+                .Where(n => n.UserId == lecturerId && n.NoteType == "Ders Programı")
+                .OrderByDescending(n => n.CreatedAt)
+                .ToListAsync();
+
+            var viewModel = new ScheduleDisplayViewModel
+            {
                 Groups = groupped,
+                Notes = notes
             };
 
             return View(viewModel);
-
         }
 
 
         [HttpGet]
         [Authorize]
-        [Route("Lecturers")]
         public async Task<IActionResult> Lecturers(UserViewModel model) 
         {
             var users = await _context.Users.Where(u => u.RoleId == "1").ToListAsync();

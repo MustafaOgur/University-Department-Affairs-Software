@@ -12,12 +12,13 @@
         
         <div class="nav-buttons-div">
 
-            <form asp-controller="MainMenu" asp-action="Index" method="get">
-                <button class="nav-buttons" id="home">Anasayfa</button>
-            </form>
 
             <!------------------------- İdari Giriş ------------------------------->
             @if(roleId == "0" || roleId == "2"){
+                <form asp-controller="MainMenu" asp-action="Index" method="get">
+                    <button class="nav-buttons" id="home">Ders Programı İşlemleri</button>
+                </form>
+
                 <form asp-controller="Classroom" asp-action="ClassroomSelection" method="get">
                     <button class="nav-buttons" id="classroom">Derslikler</button>
                 </form>
@@ -52,7 +53,34 @@
                     <button class="nav-buttons" id="exam">Kişisel Ders Programı</button>
                 </form>
             }
+
+            @if(roleId == "1"){
+                <form asp-controller="Exam" asp-action="AcademicExamSchedule" method="get">
+                    <button class="nav-buttons" id="exam">Kişisel Sınav Programı</button>
+                </form>
+            }
             
+            @if(roleId == "1"){
+                <form asp-controller="Sitting" asp-action="InstructorSeatingPlans" method="get">
+                    <button class="nav-buttons" id="exam">Sınav Oturma Düzeni</button>
+                </form>
+            }
+
+            @if (roleId == "1")
+            {
+                <form asp-controller="Note" asp-action="Add" method="get">
+                    <button class="nav-buttons" id="note">Not Ekle</button>
+                </form>
+            }
+
+            @if (roleId == "1")
+            {
+                <form asp-controller="Note" asp-action="MyNotes" method="get">
+                    <button class="nav-buttons" id="note">Notlarım</button>
+                </form>
+            }
+
+
         </div>
 
         <!-- logout-div asıl proje versiyonu -->
