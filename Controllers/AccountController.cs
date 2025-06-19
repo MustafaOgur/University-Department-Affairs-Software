@@ -130,7 +130,7 @@ namespace UDAS.Controllers
                     authProporties);
 
 
-                    return RedirectToAction("Menu","Account");
+                    return RedirectToAction("Index", "InstructorSchedule");
                 }
                 else
                 {

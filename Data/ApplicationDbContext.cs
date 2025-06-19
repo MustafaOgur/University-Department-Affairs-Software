@@ -23,5 +23,6 @@ namespace UDAS.Data
         public DbSet<ExamSchedule> ExamSchedules { get; set; }
         public DbSet<SeatingPlan> SeatingPlans { get; set; }
         public DbSet<SeatAssignment> SeatAssignments { get; set; }
+        public DbSet<Note> Notes { get; set; }
     }
 }

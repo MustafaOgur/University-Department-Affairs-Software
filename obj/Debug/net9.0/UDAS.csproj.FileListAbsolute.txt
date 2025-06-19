@@ -710,13 +710,9 @@ D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\UDAS.sou
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\scopedcss\bundle\UDAS.styles.css
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\scopedcss\projectbundle\UDAS.bundle.scp.css
-D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\um1smutvqw-6eoxws5raa.gz
-D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jck5g1v2fd-b937wwfcsk.gz
-D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\23e2ev3395-5adzhvgje7.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\mw53q1tmnw-b9sayid5wm.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\o8e9fvkl9y-9rsyncvzsd.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\kinmaedjtc-61n19gt1b8.gz
-D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\njqxarhh1x-xtxxf3hu2r.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\gzrsa6ax7a-t1cqhe9u97.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\235du0zj6y-c2jlpeoesf.gz
 D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\efxmoctzse-sejl45xvog.gz
@@ -1075,3 +1071,14 @@ C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jgqz4ak8dv-twj13tahhb.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\939h8f7buu-r5dyduy8h4.gz
 C:\Users\Volkan\Desktop\Dosyalar\Visual Studio\VS Code\C#\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\hecy85cb0c-zb2wnzcnlx.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jgqz4ak8dv-sj4bdiw9wh.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\um1smutvqw-zs5ushaxfj.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ty0em7u42g-fzysda9a0e.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\4n00pywn7m-v9quzff8ki.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\ubkpw135cj-ja6zyb54uy.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\hg51exox8x-hy8p50z943.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\jck5g1v2fd-ibe5f13bv5.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\939h8f7buu-58pm4z5954.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\23e2ev3395-6eoxws5raa.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\7sazcb3vdx-2qa7xaay34.gz
+D:\Git Projects\University-Department-Affairs-Software\obj\Debug\net9.0\compressed\njqxarhh1x-20jv9oyhqo.gz

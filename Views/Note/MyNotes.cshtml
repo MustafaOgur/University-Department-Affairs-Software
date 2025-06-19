@@ -1,0 +1,61 @@
+@model List<UDAS.Entities.Note>
+
+@{
+    Layout = "_MenuLayout";
+    ViewData["CSS"] = "/css/MainMenu.css";
+    var dersNotlari = Model.Where(n => n.NoteType == "Ders Programı").ToList();
+    var sinavNotlari = Model.Where(n => n.NoteType == "Sınav").ToList();
+}
+
+<div class="center" style="max-width: 800px; margin: auto; padding-top: 20px;">
+    <h2 style="text-align:center;">Notlarım</h2>
+
+    @if (dersNotlari.Any())
+    {
+        <h3 style="margin-top: 30px; color:#2c3e50;">📚 Ders Programı Notları</h3>
+        <ul style="list-style:none; padding-left:0;">
+            @foreach (var note in dersNotlari)
+            {
+                <li style="background-color:#f0f0f0; margin-bottom:10px; padding:15px; border-radius:8px; border:1px solid #ccc;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div>
+                            <strong>@note.CreatedAt.ToString("dd.MM.yyyy HH:mm")</strong>
+                            <p>@note.Content</p>
+                        </div>
+                        <form asp-action="Delete" asp-controller="Note" method="post" style="margin:0;">
+                            <input type="hidden" name="id" value="@note.Id" />
+                            <button type="submit" style="background-color:#e74c3c; color:white; border:none; padding:5px 10px; border-radius:5px;">Sil</button>
+                        </form>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+
+    @if (sinavNotlari.Any())
+    {
+        <h3 style="margin-top: 30px; color:#2c3e50;">📝 Sınav Notları</h3>
+        <ul style="list-style:none; padding-left:0;">
+            @foreach (var note in sinavNotlari)
+            {
+                <li style="background-color:#f0f0f0; margin-bottom:10px; padding:15px; border-radius:8px; border:1px solid #ccc;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div>
+                            <strong>@note.CreatedAt.ToString("dd.MM.yyyy HH:mm")</strong>
+                            <p>@note.Content</p>
+                        </div>
+                        <form asp-action="Delete" asp-controller="Note" method="post" style="margin:0;">
+                            <input type="hidden" name="id" value="@note.Id" />
+                            <button type="submit" style="background-color:#e74c3c; color:white; border:none; padding:5px 10px; border-radius:5px;">Sil</button>
+                        </form>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+
+    @if (!dersNotlari.Any() && !sinavNotlari.Any())
+    {
+        <p style="text-align:center; margin-top:40px;">Henüz hiç notunuz yok.</p>
+    }
+</div>

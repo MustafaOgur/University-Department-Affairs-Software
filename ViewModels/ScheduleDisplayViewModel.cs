@@ -9,6 +9,7 @@ namespace UDAS.ViewModels
     public class ScheduleDisplayViewModel
     {
         public List<YearlyScheduleGroup>? Groups { get; set; }
+        public List<Note>? Notes { get; set; }
         
     }
 
